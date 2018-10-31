@@ -1,1 +1,11 @@
+/* Media queryDesktop */
+@mediascreenand(min-width:1080px) 
+{/* defaultDesktop CSS */}
 
+/* Tablet, SmallerDesktops, LandscapeSmartphones */
+@mediascreenand(max-width:1079px) and(min-width: 401px)
+{/* Tablet CSS */}
+
+/* Portrait Smartphones */
+@mediascreenand(max-width:400px) 
+{/* Smartphone CSS */}

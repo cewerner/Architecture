@@ -1,1 +1,63 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {margin: 0px}
+header {position: fixed !important;
+        display: block;
+        margin: 10px;
+        width: 100%;}
+navbar {display: flex;
+        flex-direction: row;
+        text-align: center;}
+navbar a {text-decoration: none;
+          color: #000;
+
+          }
+.content {background-color: rgb(100,60,60);
+          padding-top: 100px}

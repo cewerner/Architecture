@@ -1,52 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {margin: 0px}
 header {position: fixed !important;
         display: block;
@@ -61,3 +12,21 @@ navbar a {text-decoration: none;
           }
 .content {background-color: rgb(100,60,60);
           padding-top: 100px}
+
+/* Media queryDesktop */
+            @mediascreenand(min-width:1080px)
+            {/* defaultDesktop CSS */
+
+            }
+
+            /* Tablet, SmallerDesktops, LandscapeSmartphones */
+            @mediascreenand(max-width:1079px) and(min-width: 401px)
+            {/* Tablet CSS */
+
+            }
+
+            /* Portrait Smartphones */
+            @mediascreenand(max-width:400px)
+            {/* Smartphone CSS */
+
+            }

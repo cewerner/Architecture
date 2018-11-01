@@ -1,4 +1,6 @@
 body {margin: 0px}
+
+/*CSS Code für Header und Menü - Start*/
 header {position:fixed;
         top: 0;
         display: flex;
@@ -10,19 +12,23 @@ header {position:fixed;
         height:70px;
         z-index: 7
         }
-navbar {margin-left: 30px;}
 header h1 {margin-block-start: 0.3em;
           margin-block-end: 0.3em;}
-navbar ul li a {text-decoration: none;
-          color: #000;}
-navbar ul li {display: inline-block;
-              padding: 5px;}
+navbar {margin-left: 30px;}
 navbar ul {display: flex;
           justify-content:space-between;
           padding: 0px;
           margin: 0px;}
+navbar ul li {display: inline-block;
+              padding: 5px;}
+navbar ul li a {text-decoration: none;
+          color: #000;}
+/*CSS Code für Header und Menü - Ende*/
+
 main {margin-top: 100px;
       display: block;}
+
+/*CSS Code für Referenzen und Partner - Start*/
 .logos {width: 100%;
         display:flex;
         justify-content: space-around;
@@ -33,8 +39,11 @@ main {margin-top: 100px;
       margin: 0 1em;
       flex-basis: auto;}
 .logo img {width: 100%}
+/*CSS Code für Referenzen und Partner - Ende*/
 
 /*CSS Code für Bildergalerie - Start*/
+.galerie {display: flex;
+          justify-content: space-around;}
 .hovertitle {
   background-color: #000;
   color: #fff;

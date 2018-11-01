@@ -1,32 +1,112 @@
 body {margin: 0px}
-header {position: fixed !important;
-        display: block;
-        margin: 10px;
-        width: 100%;}
-navbar {display: flex;
-        flex-direction: row;
-        text-align: center;}
-navbar a {text-decoration: none;
-          color: #000;
+header {position:fixed;
+        top: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding: 10px 30px 10px 10px;
+        width: 100%;
+        background-color: #fff;
+        height:70px;
+        z-index: 7
+        }
+navbar {margin-left: 30px;}
+header h1 {margin-block-start: 0.3em;
+          margin-block-end: 0.3em;}
+navbar ul li a {text-decoration: none;
+          color: #000;}
+navbar ul li {display: inline-block;
+              padding: 5px;}
+navbar ul {display: flex;
+          justify-content:space-between;
+          padding: 0px;
+          margin: 0px;}
+main {margin-top: 100px;
+      display: block;}
+.logos {width: 100%;
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #808080;
+      }
+.logo {width:8em;
+      margin: 0 1em;
+      flex-basis: auto;}
+.logo img {width: 100%}
 
-          }
-.content {background-color: rgb(100,60,60);
-          padding-top: 100px}
+/*CSS Code für Bildergalerie - Start*/
+.hovertitle {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  margin: 8px;
+  max-width: 315px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.hovertitle img {
+  vertical-align: top;
+  max-width: 100%;
+}
+.hovertitle figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+}
+.hovertitle h3 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.hovertitle h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+/* Dieser Teil macht das Bild bei Hover dunkler*/.hovertitle:hover > img,
+.hovertitle.hover > img {
+  opacity: 0.5;
+}
+
+/*Dieser Teil macht, dass die Schrift bei Hover sichtbar ist*/.hovertitle:hover figcaption,
+.hovertitle.hover figcaption {
+  opacity: 1;
+}
+/*CSS Code für Bildergalerie - Ende*/
+
 
 /* Media queryDesktop */
-            @mediascreenand(min-width:1080px)
-            {/* defaultDesktop CSS */
+@mediascreen and(min-width:1080px)
+{/* defaultDesktop CSS */
 
-            }
+}
 
-            /* Tablet, SmallerDesktops, LandscapeSmartphones */
-            @mediascreenand(max-width:1079px) and(min-width: 401px)
-            {/* Tablet CSS */
+/* Tablet, SmallerDesktops, LandscapeSmartphones */
+@mediascreen and(max-width:1079px) and(min-width: 401px)
+{/* Tablet CSS */
 
-            }
+}
 
-            /* Portrait Smartphones */
-            @mediascreenand(max-width:400px)
-            {/* Smartphone CSS */
+/* Portrait Smartphones */
+@mediascreen and(max-width:400px)
+{/* Smartphone CSS */
 
-            }
+}

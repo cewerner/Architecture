@@ -106,7 +106,8 @@ main {margin-top: 100px;
 /*CSS Code für den Kontakt -Start*/
 iframe {display:inline-block;
         width: 60%;
-        height: 300px}
+        height: 300px;
+        border: none;}
  /*CSS Code für den Kontakt -Ende*/
 
 /* Media queryDesktop */

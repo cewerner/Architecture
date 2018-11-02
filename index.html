@@ -168,28 +168,30 @@
       </div>
       <div class="Bewerbungsformular">
         <p>Anrede:</p>
-        <select name="Anrede">
+        <select name="Anrede" required>
           <option value="Herr">Herr</option>
           <option value="Frau">Frau</option>
         </select>
         <p>Vorname:</p>
-        <input type="text"></input>
+        <input type="text" placeholder="Vorname" required></input>
         <p>Nachname:</p>
-        <input type="text"></input>
+        <input type="text" placeholder="Nachname" required></input>
         <p>Straße und Hausnummer:</p>
-        <input type="text"></input>
+        <input type="text" placeholder="Straße, Nr."></input>
         <p>PLZ:</p>
-        <input type="number"></input>
+        <input type="text" placeholder="Postleitzahl"></input>
         <p>Ort:</p>
-        <input type="text"></input>
+        <input type="text" placeholder="Ort"></input>
         <p>E-Mail:</p>
-        <input type="email"></input>
+        <input type="email" placeholder="E-Mail" required></input>
         <p>Anschreiben:</p>
-        <input type="file"></input>
+        <input type="file" required></input>
         <p>Lebenslauf:</p>
-        <input type="file"></input>
+        <input type="file" required></input>
         <p>Weitere Unterlagen:</p>
         <input type="file"></input>
+        <br><br>
+        <input type="submit"></input>
       </div>
     </div>
     <div class="container" id="Impressum">

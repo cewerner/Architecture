@@ -1,4 +1,8 @@
-body {margin: 0px;
+* {
+  box-sizing: border-box;
+}
+html, body {margin: 0;
+  padding: 0;
       width: 100%;}
 
 /*CSS Code für Header und Menü - Start*/
@@ -104,10 +108,13 @@ main {margin-top: 100px;
 /*CSS Code für Bildergalerie - Ende*/
 
 /*CSS Code für den Kontakt -Start*/
-iframe {display:inline-block;
-        width: 60%;
-        height: 300px;
-        border: none;}
+.kontakt {display: flex;}
+.kontakt p {padding:0px;
+            flex:0 1 400px;
+            min-height: 300px;}
+iframe {border: none;
+        flex:1 1 680px;
+        min-height: 300px;}
  /*CSS Code für den Kontakt -Ende*/
 
 /* Media queryDesktop */
@@ -118,15 +125,29 @@ iframe {display:inline-block;
 
 /* Tablet, SmallerDesktops, LandscapeSmartphones */
 @media screen and (max-width:1079px)
-              and (min-width: 401px)
-{/* Tablet CSS */
-.hovertitle {width: 45%;}
-
+              and (min-width: 401px){
+/* Tablet CSS*/
+  .hovertitle {width: 45%;}
+  .kontakt {flex-direction: column;}
+  .kontakt p {width: 100%;
+              max-height: 200px;
+              min-height: 0px;}
+  iframe {width: 100%;
+          max-height: 300px;
+          min-height: 0px;}
 }
 
 /* Portrait Smartphones */
-@media screen and (max-width: 400px)
-{/* Smartphone CSS */
-.galerie {flex-direction: column;}
-.hovertitle {width: 90%;}
+@media screen and (max-width:400px){
+/* Smartphone CSS */
+  .galerie {flex-direction: column;
+            align-items: center;}
+  .hovertitle {width: 90%;}
+  .kontakt {flex-direction: column;}
+  .kontakt p {width: 100%;
+              max-height: 150px;
+              min-height: 0px;}
+  iframe {width: 100%;
+          max-height: 150px;
+          min-height: 0px;}
 }

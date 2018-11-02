@@ -1,8 +1,9 @@
-<Doctype HTML>
+<!Doctype HTML>
 <html>
 <head>
   <title>HFW Architekten</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="stylesheet.css" rel="stylesheet">
 </head>
 <body>
@@ -109,11 +110,13 @@
       <h2>Team</h2>
       <p>Hier folgen drei Bilder von den Teammitgliedern sowie je eine kurze Beschreibung.<br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
     </div>
-    <div class="container" id="Kontakt">
+    <div class="container " id="Kontakt">
       <h2>Kontakt</h2>
-      <p>HWF Architekten<br>
-          Rheingaustraße 140, 65203 Wiesbaden</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10859.238908785474!2d8.221875630936767!3d50.040600324601535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd960d1b00407f%3A0x652e94e96b5777b8!2sSchloss+Biebrich!5e0!3m2!1sde!2sde!4v1541119845137" allowfullscreen></iframe>
+      <div class="kontakt">
+        <p>HWF Architekten<br>
+            Rheingaustraße 140, 65203 Wiesbaden</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10859.238908785474!2d8.221875630936767!3d50.040600324601535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd960d1b00407f%3A0x652e94e96b5777b8!2sSchloss+Biebrich!5e0!3m2!1sde!2sde!4v1541119845137" allowfullscreen></iframe>
+      </div>
     </div>
     <div class="container" id="Karriere">
       <h2>Karriere</h2>
@@ -173,25 +176,25 @@
           <option value="Frau">Frau</option>
         </select>
         <p>Vorname:</p>
-        <input type="text" placeholder="Vorname" required></input>
+        <input id="vorname" type="text" placeholder="Vorname" required></input>
         <p>Nachname:</p>
-        <input type="text" placeholder="Nachname" required></input>
+        <input id="nachname" type="text" placeholder="Nachname" required></input>
         <p>Straße und Hausnummer:</p>
-        <input type="text" placeholder="Straße, Nr."></input>
+        <input id="straße" type="text" placeholder="Straße, Nr."></input>
         <p>PLZ:</p>
-        <input type="text" placeholder="Postleitzahl"></input>
+        <input id="plz" type="text" placeholder="Postleitzahl"></input>
         <p>Ort:</p>
-        <input type="text" placeholder="Ort"></input>
+        <input id="ort" type="text" placeholder="Ort"></input>
         <p>E-Mail:</p>
-        <input type="email" placeholder="E-Mail" required></input>
+        <input id="email" type="email" placeholder="E-Mail" required></input>
         <p>Anschreiben:</p>
-        <input type="file" required></input>
+        <input id="anschreiben" type="file" accept="application/pdf" required></input>
         <p>Lebenslauf:</p>
-        <input type="file" required></input>
+        <input id="lebenslauf" type="file" accept="application/pdf" required></input>
         <p>Weitere Unterlagen:</p>
-        <input type="file"></input>
+        <input id="unterlagen" type="file"accept="application/pdf"></input>
         <br><br>
-        <input type="submit"></input>
+        <input type="reset" value="Senden"></input>
       </div>
     </div>
     <div class="container" id="Impressum">

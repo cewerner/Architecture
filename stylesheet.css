@@ -4,6 +4,8 @@
 html, body {margin: 0;
   padding: 0;
       width: 100%;}
+.nichtbreiter{max-width: 1080px;
+              margin:0px auto;}
 
 /*CSS Code für Header und Menü - Start*/
 header {position:fixed;
@@ -34,23 +36,25 @@ main {margin-top: 100px;
       display: block;}
 
 /*CSS Code für Referenzen und Partner - Start*/
-.logos {width: 100%;
-        display:flex;
+.banner {background-color: #808080;
+        width: 100%
+        }
+.logos {display:flex;
         justify-content: space-around;
         padding: 20px;
-        background-color: #808080;
       }
 .logo {width:8em;
       margin: 0 1em;
       flex-basis: auto;}
-.logo img {width: 100%}
+.logo img {width: 100%;}
 /*CSS Code für Referenzen und Partner - Ende*/
 
-/*CSS Code für Bildergalerie - Start*/
+/*CSS Code für Bildergalerie und Team- Start*/
 .galerie {display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          justify-content: space-around;}
+          justify-content: space-around;
+          }
 .hovertitle {
   background-color: #000;
   color: #fff;
@@ -61,9 +65,10 @@ main {margin-top: 100px;
   overflow: hidden;
   position: relative;
   text-align: center;
-  width: 30%;
   max-width: 440px;
 }
+.hovertitle.portfolio {width: 30%;}
+.hovertitle.team {width: 30%;}
 
 .hovertitle img {
   vertical-align: top;
@@ -127,7 +132,8 @@ iframe {border: none;
 @media screen and (max-width:1079px)
               and (min-width: 401px){
 /* Tablet CSS*/
-  .hovertitle {width: 45%;}
+  .hovertitle.portfolio {width: 45%;}
+  .hovertitle.team {min-width: none;}
   .kontakt {flex-direction: column;}
   .kontakt p {width: 100%;
               max-height: 200px;
@@ -142,7 +148,8 @@ iframe {border: none;
 /* Smartphone CSS */
   .galerie {flex-direction: column;
             align-items: center;}
-  .hovertitle {width: 90%;}
+  .hovertitle.portfolio {width: 90%;}
+  .hovertitle.team {width: 90%;}
   .kontakt {flex-direction: column;}
   .kontakt p {width: 100%;
               max-height: 150px;

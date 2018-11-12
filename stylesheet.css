@@ -24,6 +24,9 @@ details {align-self: center;
         padding:10px;
         margin: 20px 10px 20px 10px;}
 ul {list-style-position: inside;}
+
+
+
 /*CSS Code für Header und Menü - Start*/
 header {position:fixed;
         top: 0;
@@ -61,9 +64,11 @@ navbar ul li a {
             margin:4.5px 10px auto auto}
 /*CSS Code für Header und Menü - Ende*/
 
+
 main {margin-top: 100px;
       display: block;}
 
+	  
 /*CSS Code für Referenzen und Partner - Start*/
 .banner {background-color: #808080;
         width: 100%
@@ -77,8 +82,16 @@ main {margin-top: 100px;
       flex-basis: auto;}
 .logo img {width: 100%;}
 
-.logo a {target:_blank;}
+
+
+.logo a {
+		 opacity: 0.8;
+		 }
+		 
+
+
 /*CSS Code für Referenzen und Partner - Ende*/
+
 
 /*CSS Code für Bildergalerie und Team- Start*/
 .galerie {display: flex;

@@ -10,6 +10,7 @@ html, body {margin: 0;
 h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;}
 p, a, li, summary {font-family: 'Open Sans', sans-serif;
                     font-size: 16px}
+a {text-decoration: none;}
 /*CSS Code für Header und Menü - Start*/
 header {position:fixed;
         top: 0;
@@ -24,19 +25,27 @@ header {position:fixed;
         box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
         }
 header h1 {margin-block-start: 0.3em;
-          margin-block-end: 0.3em;}
-navbar {margin-left: 30px;}
+          margin-block-end: 0.3em;
+          color: #fff;
+          font-weight: normal;
+        }
+navbar {margin-left: 30px;
+        display:inline;
+        }
 navbar ul {display: flex;
           justify-content:space-between;
           padding: 0px;
-          margin: 0px;}
+          margin: 0px;
+        }
 navbar ul li {display: inline-block;
               padding: 5px;}
 navbar ul li a {
                 text-decoration: none;
-                color: #000;
+                color: #fff;
                 font-family: 'Abel', sans-serif;}
-#menubutton {display:none;}
+#menubutton {display:none;
+            width: 50px;
+            margin:4.5px 10px auto auto}
 /*CSS Code für Header und Menü - Ende*/
 
 main {margin-top: 100px;
@@ -133,12 +142,17 @@ iframe {border: none;
                     and (min-width: 401px){
       /* Tablet CSS*/
       /*CSS Code für Header und Menü - Start*/
-      navbar {display: none;}
+      header {flex-wrap: wrap;
+              align-items: flex-start;}
+      navbar {display: none;
+              width:100%;
+              margin: 0px 205.5px 0px 205.5px;}
       navbar ul {flex-direction: column;}
+      navbar ul li {border-bottom: 1px solid;
+                    border-color: rgba(255,255,255,0.5);
+                    }
       #menubutton {
-                  display:inline;
-                  width: 50px;
-                  margin:auto 10px auto auto }
+                  display:inline;}
       /*CSS Code für Header und Menü - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
@@ -161,13 +175,10 @@ iframe {border: none;
       /* Smartphone CSS */
       /*CSS Code für Header und Menü - Start*/
       navbar {display: none;
-              flex-direction: column;}
+              margin-top: 70px;}
       navbar ul {flex-direction: column;}
-      /*navbar ul {flex-direction: column;}*/
       #menubutton {
-                  width: 50px;
-                  display:inline;
-                  }
+                  display:inline; }
       /*CSS Code für Header und Menü - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/

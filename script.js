@@ -15,4 +15,32 @@ $('a').click(function(){
   }
 });
 /*Smooth scrolling -Ende*/
+/*Responsive Burgermenü - Start*/
+$(function() {
+  var menuVisible = false;
+  $('#menubutton').click(function() {
+  if (menuVisible) {
+    $('#Menü').css({'display':'none'});
+    menuVisible = false;
+    return;
+  }
+  $('#Menü').css({'display':'block'});
+  menuVisible = true;
+  });
+});
+
+$(window).resize(function(){
+$('body,html').css('overflow','hidden');
+var screenWidth = $(window).width();
+$('body, html').css('overflow','visible');
+
+  if (screenWidth >= 768){
+        $('#Menü').css({'display':'block'});
+  }   else {
+          $('#Menü').css({'display':'none'});
+          menuVisible = false;
+  }
+});
+/*Responsive Burgermenü - Ende*/
+
 });

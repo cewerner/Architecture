@@ -6,11 +6,12 @@ html, body {margin: 0;
       width: 100%;}
 .nichtbreiter{max-width: 1080px;
               margin:0px auto;}
-
 h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;}
 p, a, li, summary {font-family: 'Open Sans', sans-serif;
-                    font-size: 16px}
+                    font-size: 16px;}
 a {text-decoration: none;}
+main h2, main h3 {margin-left: 10px;}
+main p,main ul, details {padding-left: 10px;}
 /*CSS Code für Header und Menü - Start*/
 header {position:fixed;
         top: 0;
@@ -123,13 +124,16 @@ main {margin-top: 100px;
 
 /*CSS Code für den Kontakt -Start*/
 .kontakt {display: flex;}
-.kontakt p {padding:0px;
-            flex:0 1 400px;
+.kontakt p {flex:0 1 400px;
             min-height: 300px;}
 iframe {border: none;
         flex:1 1 680px;
         min-height: 300px;}
  /*CSS Code für den Kontakt -Ende*/
+
+/*CSS Code für den Karrierebereich -Start*/
+details {content: '+'}
+/*CSS Code für den Karrierebereich -Ende*/
 
 /* Media queryDesktop */
 @media screen and(min-width:1080px)

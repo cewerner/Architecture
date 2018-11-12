@@ -7,6 +7,8 @@ html, body {margin: 0;
 .nichtbreiter{max-width: 1080px;
               margin:0px auto;}
 
+h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;}
+
 /*CSS Code für Header und Menü - Start*/
 header {position:fixed;
         top: 0;
@@ -28,8 +30,10 @@ navbar ul {display: flex;
           margin: 0px;}
 navbar ul li {display: inline-block;
               padding: 5px;}
-navbar ul li a {text-decoration: none;
-          color: #000;}
+navbar ul li a {
+                text-decoration: none;
+                color: #000;
+                font-family: 'Abel', sans-serif;}
 /*CSS Code für Header und Menü - Ende*/
 
 main {margin-top: 100px;

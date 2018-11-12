@@ -6,11 +6,13 @@ html, body {margin: 0;
       width: 100%;}
 .nichtbreiter{max-width: 1080px;
               margin:0px auto;}
-h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;}
+h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;
+                margin:5px;}
 p, a, li, summary {font-family: 'Open Sans', sans-serif;
-                    font-size: 16px;}
+                    font-size: 16px;
+                    margin:0px;}
 a {text-decoration: none;}
-main h2, main h3 {margin-left: 10px;}
+main h2, main h3, input, select {margin-left: 10px;}
 main p,main ul, details {padding-left: 10px;}
 /*CSS Code für Header und Menü - Start*/
 header {position:fixed;
@@ -81,7 +83,7 @@ main {margin-top: 100px;
   overflow: hidden;
   position: relative;
   text-align: center;
-  max-width: 440px;
+  max-width: 400px;
 }
 .hovertitle.portfolio {width: 30%;}
 .hovertitle.team {width: 30%;}
@@ -132,7 +134,7 @@ iframe {border: none;
  /*CSS Code für den Kontakt -Ende*/
 
 /*CSS Code für den Karrierebereich -Start*/
-details {content: '+'}
+details {}
 /*CSS Code für den Karrierebereich -Ende*/
 
 /* Media queryDesktop */
@@ -204,5 +206,5 @@ details {content: '+'}
       }
 
 /* CSS Code für Impressum - Start */
-      .impressum p {font-size: 13px;}
+.impressum p {font-size: 14px;}
 /* CSS Code für Impressum - Ende */

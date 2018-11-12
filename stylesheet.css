@@ -8,7 +8,7 @@ html, body {margin: 0;
               margin:0px auto;}
 
 h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;}
-
+p, a, li, summary {font-family: 'Open Sans', sans-serif;}
 /*CSS Code für Header und Menü - Start*/
 header {position:fixed;
         top: 0;
@@ -63,7 +63,7 @@ main {margin-top: 100px;
   background-color: #000;
   color: #fff;
   display: block;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   margin: 8px;
   overflow: hidden;

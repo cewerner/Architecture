@@ -1,5 +1,6 @@
 $(document).ready(function(){
   /*Smooth scrolling -Start*/
+
 $('a').click(function(){
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
   && location.hostname == this.hostname) {
@@ -7,10 +8,11 @@ $('a').click(function(){
       $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
       if ($target.length) {
           var targetOffset = $target.offset().top;
-          $('html,body,main').animate({scrollTop: targetOffset}, 700);
+          var HeaderHeight = $("Header").outerHeight();
+          $('html,body,main').animate({scrollTop: targetOffset-HeaderHeight}, 700);
           return false;
       }
   }
 });
 /*Smooth scrolling -Ende*/
-};
+});

@@ -41,7 +41,7 @@ if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     if ($target.length) {
         var targetOffset = $target.offset().top;
         var HeaderHeight = $("Header").outerHeight();
-        $('html,body,main').animate({scrollTop: targetOffset-HeaderHeight}, 700);
+        $('html,body,main').animate({scrollTop: targetOffset-HeaderHeight-20}, 700);
         return false;
     }
 }

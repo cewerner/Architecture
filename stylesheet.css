@@ -63,7 +63,7 @@ navbar ul li a {
 main {margin-top: 100px;
       display: block;}
 
-	  
+
 /*CSS Code für Referenzen und Partner - Start*/
 .banner {background-color: #808080;
         width: 100%
@@ -82,7 +82,7 @@ main {margin-top: 100px;
 .logo a {
 		 opacity: 0.8;
 		 }
-		 
+
 
 
 /*CSS Code für Referenzen und Partner - Ende*/
@@ -163,13 +163,16 @@ details {
         border:1px solid;
         border-color: #808080;
         padding:10px;
-        margin:5px 10px 5px 10px;
+        margin:5px 10px 5px 0px;
         width:100%;}
 .Bewerbungsformular {display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-around;}
-.Bewerbungsformular div {width: 31%;}
-.breit {width: 100%;}
+                    justify-content: space-around;
+                    margin: 0px 10px 0px 0px}
+.drittel {width: 31%;}
+.breit {width: 100%;
+        margin: 0px 10px 0px 10px;}
+.Bewerbungsformular h3 {margin-left: 0px}
 /*CSS Code für den Karrierebereich -Ende*/
 
 /* Media queryDesktop */

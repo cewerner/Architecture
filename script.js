@@ -26,9 +26,12 @@ $('body, html').css('overflow','visible');
           menuVisible = false;
   }
 });
+var screenWidth = $(window).width();
+if (screenWidth < 1080){
 $('navbar ul li a').click(function(){
   $('#Menü').css({'display':'none'});
 })
+};
 /*Responsive Burgermenü - Ende*/
 
 /*Smooth scrolling -Start*/

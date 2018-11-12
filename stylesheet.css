@@ -6,6 +6,9 @@ html, body {margin: 0;
       width: 100%;}
 .nichtbreiter{max-width: 1080px;
               margin:0px auto;}
+.container {
+            margin-top:100px;
+            margin-bottom: 100px}
 h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;
                 margin:5px;}
 p, a, li, summary {font-family: 'Open Sans', sans-serif;
@@ -14,6 +17,13 @@ p, a, li, summary {font-family: 'Open Sans', sans-serif;
 a {text-decoration: none;}
 main h2, main h3, input, select {margin-left: 10px;}
 main p,main ul, details {padding-left: 10px;}
+main h2 {text-align: center;}
+details {align-self: center;
+        border:1px solid;
+        border-color: #808080;
+        padding:10px;
+        margin: 20px 10px 20px 10px;}
+ul {list-style-position: inside;}
 /*CSS Code für Header und Menü - Start*/
 header {position:fixed;
         top: 0;
@@ -153,8 +163,9 @@ details {}
       header {flex-wrap: wrap;
               align-items: flex-start;}
       navbar {display: none;
-              width:100%;
-              margin: 0px 205.5px 0px 205.5px;}
+              width: 100%;
+              max-width: 648px;
+              margin: 0px auto 0px 205.5px;}
       navbar ul {flex-direction: column;}
       navbar ul li {border-bottom: 1px solid;
                     border-color: rgba(255,255,255,0.5);
@@ -182,11 +193,17 @@ details {}
     @media screen and (max-width:400px){
       /* Smartphone CSS */
       /*CSS Code für Header und Menü - Start*/
+      header {flex-wrap: wrap;
+              align-items: flex-start;}
       navbar {display: none;
-              margin-top: 70px;}
+              width:100%;
+              margin: 0px 205.5px 0px 205.5px;}
       navbar ul {flex-direction: column;}
+      navbar ul li {border-bottom: 1px solid;
+                    border-color: rgba(255,255,255,0.5);
+                    }
       #menubutton {
-                  display:inline; }
+                  display:inline;}
       /*CSS Code für Header und Menü - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/

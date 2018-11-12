@@ -74,7 +74,7 @@ main {margin-top: 100px;
   max-width: 440px;
 }
 .hovertitle.portfolio {width: 30%;}
-.hovertitle.team {width: 30%;}
+.hovertitle.team {width: 30%; font-size: 15px;}
 
 .hovertitle img {
   vertical-align: top;

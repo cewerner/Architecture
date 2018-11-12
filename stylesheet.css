@@ -187,3 +187,7 @@ iframe {border: none;
                 min-height: 0px;}
       /*CSS Code für Kontakt- Ende*/
       }
+
+/* CSS Code für Impressum - Start */
+      .impressum p {font-size: 13px; line-height: 5px;}
+/* CSS Code für Impressum - Ende */

@@ -20,14 +20,10 @@ html, body {
 
 h1,h2,h3,h4,h5 {
   font-family: 'Abel', sans-serif;
-  margin:5px;
+  margin:10px;
 }
 
-<<<<<<< HEAD
-p, a, li, summary {
-=======
 p, a, li, summary, label {
->>>>>>> 68f12ee9d1bc74b493ad4dc1aaf91d3a2cf6aaed
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin:0px;
@@ -242,7 +238,7 @@ button#send {
         color: #fff;
         border:1px solid;
         border-color: #808080;
-        margin:34px auto 0px auto;}
+        margin:44px auto 0px auto;}
 
 .file-upload {
   position: relative;
@@ -282,7 +278,12 @@ button#send {
 
 /* CSS Code für Impressum - Start */
 .impressum p {font-size: 14px;}
+.impressum {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;}
 /* CSS Code für Impressum - Ende */
+
 
 
 /*-----------------------media queries-------------------------*/
@@ -406,11 +407,3 @@ button#send {
     }
 
 /*------------------media queries ende------------------*/
-<<<<<<< HEAD
-
-/* CSS Code für Impressum - Start */
-.impressum div {display: flex; justify-content: space-between;}
-.impressum p {font-size: 14px;}
-/* CSS Code für Impressum - Ende */
-=======
->>>>>>> 68f12ee9d1bc74b493ad4dc1aaf91d3a2cf6aaed

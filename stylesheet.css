@@ -14,14 +14,16 @@ html, body {
 }
 
 .container {
-            margin-top:100px;
-            margin-bottom: 100px}
-h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;
-                margin:5px;}
-p, a, li, summary,label {font-family: 'Open Sans', sans-serif;
-                        font-size: 16px;
-                        margin:0px;
-                        font-weight: normal;}
+  margin-top:100px;
+  margin-bottom: 100px}
+h1,h2,h3,h4,h5 {
+  font-family: 'Abel', sans-serif;
+  margin:5px;}
+p, a, li, summary,label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin:0px;
+  font-weight: normal;}
 a {text-decoration: none;}
 main h2, main h3{margin-left: 10px;}
 main p,main ul, details {padding-left: 10px;}

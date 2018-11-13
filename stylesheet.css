@@ -1,21 +1,39 @@
 * {
   box-sizing: border-box;
 }
-html, body {margin: 0;
+
+html, body {
+  margin: 0;
   padding: 0;
-      width: 100%;}
-.nichtbreiter{max-width: 1080px;
-              margin:0px auto;}
+  width: 100%;
+}
+	  
+.nichtbreiter{
+  max-width: 1080px;
+  margin:0px auto;
+}
+
 .container {
-            margin-top:100px;
-            margin-bottom: 100px}
-h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;
-                margin:5px;}
-p, a, li, summary {font-family: 'Open Sans', sans-serif;
-                   font-size: 16px;
-                   margin:0px;}
-a {text-decoration: none;
-   color:inherit;}
+  margin-top:100px;
+  margin-bottom: 100px
+}
+			
+h1,h2,h3,h4,h5 {
+  font-family: 'Abel', sans-serif;
+  margin:5px;
+}
+				
+p, a, li, summary {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin:0px;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+  
 main h2, main h3, input, select {margin-left: 10px;}
 main p,main ul, details {padding-left: 10px;}
 main h2 {text-align: center;}
@@ -24,65 +42,85 @@ ul {list-style-position: inside;}
 
 
 /*CSS Code für Header und Menü - Start*/
-header {position:fixed;
-        top: 0;
-        display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
-        padding: 10px 10px 10px 10px;
-        width: 100%;
-        min-height: 70px;
-        z-index: 7;
-        background-color: #808080;
-        box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
-        }
-header h1 {margin-block-start: 0.3em;
-          margin-block-end: 0.3em;
-          color: #fff;
-          font-weight: normal;
-        }
-navbar {margin-left: 30px;
-        display:inline;
-        }
-navbar ul {display: flex;
-          justify-content:space-between;
-          padding: 0px;
-          margin: 0px;
-        }
-navbar ul li {display: inline-block;
-              padding: 5px;}
+header {
+  position:fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  min-height: 70px;
+  z-index: 7;
+  background-color: #808080;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
+}
+		
+header h1 {
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  color: #fff;
+  font-weight: normal;
+}
+		
+navbar {
+  margin-left: 30px;
+  display:inline;
+}
+		
+navbar ul {
+  display: flex;
+  justify-content:space-between;
+  padding: 0px;
+  margin: 0px;
+}
+		
+navbar ul li {
+  display: inline-block;
+  padding: 5px;
+}
+  
 navbar ul li a {
-                text-decoration: none;
-                color: #fff;
-                font-family: 'Abel', sans-serif;}
-#menubutton {display:none;
-            width: 50px;
-            margin:4.5px 10px auto auto}
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Abel', sans-serif;
+}
+
+#menubutton {
+  display:none;
+  width: 50px;
+  margin:4.5px 10px auto auto
+}
 /*CSS Code für Header und Menü - Ende*/
 
 
-main {margin-top: 100px;
-      display: block;}
+main {
+  margin-top: 100px;
+  display: block;
+}
 
 
 /*CSS Code für Referenzen und Partner - Start*/
-.banner {background-color: #808080;
-        width: 100%
-        }
-.logos {display:flex;
-        justify-content: space-around;
-        padding: 20px;
-      }
-.logo {width:8em;
-      margin: 0 1em;
-      flex-basis: auto;}
+.banner {
+  background-color: #808080;
+  width: 100%
+}
+
+.logos {
+  display:flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+	  
+.logo {
+  width:8em;
+  margin: 0 1em;
+  flex-basis: auto;
+}
+
 .logo img {width: 100%;}
 
-
-
-.logo a {
-		 opacity: 0.5;
-		 }
+.logo a {opacity: 0.5;}
 
 		 
 .logo a:hover {opacity:1}
@@ -92,11 +130,13 @@ main {margin-top: 100px;
 
 
 /*CSS Code für Bildergalerie und Team- Start*/
-.galerie {display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          }
+.galerie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+		  
 .hovertitle {
   background-color: #000;
   color: #fff;
@@ -108,13 +148,16 @@ main {margin-top: 100px;
   text-align: center;
   max-width: 400px;
 }
+
 .hovertitle.portfolio {width: 30%;}
+
 .hovertitle.team {width: 30%;}
 
 .hovertitle img {
   vertical-align: top;
   max-width: 100%;
 }
+
 .hovertitle figcaption {
   position: absolute;
   padding: 10px;
@@ -131,6 +174,7 @@ main {margin-top: 100px;
   opacity: 0;
   z-index: 2;
 }
+
 .hovertitle h3 {
   font-weight: 400;
   margin: 0;
@@ -147,112 +191,176 @@ main {margin-top: 100px;
 }
 /*CSS Code für Bildergalerie - Ende*/
 
+
+
+
 /*CSS Code für den Kontakt -Start*/
 .kontakt {display: flex;}
-.kontakt p {flex:0 1 400px;
-            min-height: 300px;}
-iframe {border: none;
-        flex:1 1 680px;
-        min-height: 300px;}
- /*CSS Code für den Kontakt -Ende*/
+.kontakt p {
+  flex:0 1 400px;
+  min-height: 300px;
+}
 
+iframe {
+  border: none;
+  flex:1 1 680px;
+  min-height: 300px;
+}
+/*CSS Code für den Kontakt -Ende*/
+
+ 
+ 
+ 
 /*CSS Code für den Karrierebereich -Start*/
 details {
-        border:1px solid;
-        border-color: #808080;
-        padding:10px;
-        margin: 20px 10px 20px 10px;}
+  border:1px solid;
+  border-color: #808080;
+  padding:10px;
+  margin: 20px 10px 20px 10px;
+}
+
 .formularfeld {
-        border:1px solid;
-        border-color: #808080;
-        padding:10px;
-        margin:5px 10px 5px 0px;
-        width:100%;}
-.Bewerbungsformular {display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                    margin: 0px 10px 0px 0px}
+  border:1px solid;
+  border-color: #808080;
+  padding:10px;
+  margin:5px 10px 5px 0px;
+  width:100%;
+}
+
+.Bewerbungsformular {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+   margin: 0px 10px 0px 0px
+}
+
 .drittel {width: 31%;}
-.breit {width: 100%;
-        margin: 0px 10px 0px 10px;}
+
+.breit {
+  width: 100%;
+  margin: 0px 10px 0px 10px;
+}
+
 .Bewerbungsformular h3 {margin-left: 0px}
 /*CSS Code für den Karrierebereich -Ende*/
 
+
+
+
+/*-----------------------media queries-------------------------*/
+
 /* Media queryDesktop */
 @media screen and(min-width:1080px)
+
 {/* defaultDesktop CSS */
 
 }
 
 /* Tablet, SmallerDesktops, LandscapeSmartphones */
     @media screen and (max-width:1079px)
-                    and (min-width: 401px){
+                  and (min-width: 401px){
       /* Tablet CSS*/
       /*CSS Code für Header und Menü - Start*/
-      header {flex-wrap: wrap;
-              align-items: flex-start;}
-      navbar {display: none;
-              width: 100%;
-              max-width: 648px;
-              margin: 0px auto 0px 205.5px;}
+      header {
+		flex-wrap: wrap;
+        align-items: flex-start;
+	  }
+			  
+      navbar {
+		display: none;
+        width: 100%;
+        max-width: 648px;
+        margin: 0px auto 0px 205.5px;
+	  }
+	  
       navbar ul {flex-direction: column;}
-      navbar ul li {border-bottom: 1px solid;
-                    border-color: rgba(255,255,255,0.5);
-                    }
-      #menubutton {
-                  display:inline;}
+	  
+      navbar ul li {
+		border-bottom: 1px solid;
+        border-color: rgba(255,255,255,0.5);
+      }
+	  
+      #menubutton {display:inline;}
       /*CSS Code für Header und Menü - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
         .hovertitle.portfolio {width: 45%;}
-        .hovertitle.team {min-width: none;}
-        /*CSS Code für Bildergalerie und Team- Ende*/
+        
+		.hovertitle.team {min-width: none;}
+		 /*CSS Code für Bildergalerie und Team- Ende*/
+		
         /*CSS Code für Kontakt- Start*/
         .kontakt {flex-direction: column;}
-        .kontakt p {width: 100%;
-                    max-height: 200px;
-                    min-height: 0px;}
-        iframe {width: 100%;
-                max-height: 300px;
-                min-height: 0px;}
+        
+		.kontakt p {
+		  width: 100%;
+          max-height: 200px;
+		  min-height: 0px;
+		}
+		 
+        iframe {
+		  width: 100%;
+          max-height: 300px;
+          min-height: 0px;
+		}
       /*CSS Code für Kontakt- Ende*/
-      }
+	}
 
 /* Portrait Smartphones */
     @media screen and (max-width:400px){
       /* Smartphone CSS */
       /*CSS Code für Header und Menü - Start*/
-      header {flex-wrap: wrap;
-              align-items: flex-start;}
-      navbar {display: none;
-              width:100%;
-              margin: 0px 205.5px 0px 205.5px;}
+      header {
+		flex-wrap: wrap;
+        align-items: flex-start;
+	  }
+			  
+      navbar {
+	    display: none;
+        width:100%;
+        margin: 0px 205.5px 0px 205.5px;
+	  }
+			  
       navbar ul {flex-direction: column;}
-      navbar ul li {border-bottom: 1px solid;
-                    border-color: rgba(255,255,255,0.5);
-                    }
-      #menubutton {
-                  display:inline;}
+	  
+      navbar ul li {
+		border-bottom: 1px solid;
+        border-color: rgba(255,255,255,0.5);
+      }
+	  
+      #menubutton {display:inline;}
       /*CSS Code für Header und Menü - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
-        .galerie {flex-direction: column;
-                  align-items: center;}
+        .galerie {
+		  flex-direction: column;
+          align-items: center;
+		}
         .hovertitle.portfolio {width: 90%;}
+		
         .hovertitle.team {width: 90%;}
         /*CSS Code für Bildergalerie und Team- Ende*/
 
         /*CSS Code für Kontakt- Start*/
         .kontakt {flex-direction: column;}
-        .kontakt p {width: 100%;
-                    max-height: 150px;
-                    min-height: 0px;}
-        iframe {width: 100%;
-                max-height: 150px;
-                min-height: 0px;}
+		
+        .kontakt p {
+		  width: 100%;
+          max-height: 150px;
+          min-height: 0px;
+		}
+		  
+        iframe {
+		  width: 100%;
+          max-height: 150px;
+          min-height: 0px;
+		}
+		
       /*CSS Code für Kontakt- Ende*/
-      }
+    }
 
+/*------------------media queries ende------------------*/
+	  
 /* CSS Code für Impressum - Start */
 .impressum p {font-size: 14px;}
 /* CSS Code für Impressum - Ende */

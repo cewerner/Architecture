@@ -12,9 +12,10 @@ html, body {margin: 0;
 h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;
                 margin:5px;}
 p, a, li, summary {font-family: 'Open Sans', sans-serif;
-                    font-size: 16px;
-                    margin:0px;}
-a {text-decoration: none;}
+                   font-size: 16px;
+                   margin:0px;}
+a {text-decoration: none;
+   color:inherit;}
 main h2, main h3, input, select {margin-left: 10px;}
 main p,main ul, details {padding-left: 10px;}
 main h2 {text-align: center;}
@@ -85,10 +86,10 @@ main {margin-top: 100px;
 
 
 .logo a {
-		 opacity: 0.8;
+		 opacity: 0.5;
 		 }
 		 
-
+.logo a:hover {opacity:1}
 
 /*CSS Code für Referenzen und Partner - Ende*/
 

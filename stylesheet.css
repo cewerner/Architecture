@@ -15,17 +15,27 @@ html, body {
 
 .container {
   margin-top:100px;
-  margin-bottom: 100px}
+  margin-bottom: 100px
+}
+
 h1,h2,h3,h4,h5 {
   font-family: 'Abel', sans-serif;
-  margin:5px;}
-p, a, li, summary,label {
+  margin:5px;
+}
+
+p, a, li, summary, label {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin:0px;
-  font-weight: normal;}
-a {text-decoration: none;}
-main h2, main h3{margin-left: 10px;}
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+main h2, main h3, input, select {margin-left: 10px;}
 main p,main ul, details {padding-left: 10px;}
 main h2 {text-align: center;}
 ul {list-style-position: inside;}
@@ -211,24 +221,24 @@ details {
 }
 
 .formularfeld {
-  border:1px solid;
-  border-color: #808080;
-  padding:10px;
-  width:100%;}
-.Bewerbungsformular {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;}
+        border:1px solid;
+        border-color: #808080;
+        padding:10px;
+        width:100%;
+        margin: 0px;}
+.Bewerbungsformular {display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;}
 .drittel {width: 31%;}
 .Bewerbungsformular h3 {margin-left: 0px;}
 button#send {
-  padding: 10px;
-  width: 100%;
-  background-color: #808080;
-  color: #fff;
-  border:1px solid;
-  border-color: #808080;
-  margin:34px auto 0px auto;}
+        padding: 10px;
+        width: 100%;
+        background-color: #808080;
+        color: #fff;
+        border:1px solid;
+        border-color: #808080;
+        margin:34px auto 0px auto;}
 
 .file-upload {
   position: relative;
@@ -257,14 +267,6 @@ button#send {
   height: 100%;
   opacity: 0;
 }
-
-.Bewerbungsformular {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-   margin: 0px 10px 0px 0px
-}
-
 .drittel {width: 31%;}
 
 .breit {
@@ -272,10 +274,11 @@ button#send {
   margin: 0px 10px 0px 10px;
 }
 
-.Bewerbungsformular h3 {margin-left: 0px}
 /*CSS Code für den Karrierebereich -Ende*/
 
-
+/* CSS Code für Impressum - Start */
+.impressum p {font-size: 14px;}
+/* CSS Code für Impressum - Ende */
 
 
 /*-----------------------media queries-------------------------*/
@@ -399,7 +402,3 @@ button#send {
     }
 
 /*------------------media queries ende------------------*/
-
-/* CSS Code für Impressum - Start */
-.impressum p {font-size: 14px;}
-/* CSS Code für Impressum - Ende */

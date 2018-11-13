@@ -7,6 +7,7 @@ html, body {margin: 0;
 .nichtbreiter{max-width: 1080px;
               margin:0px auto;}
 .container {
+<<<<<<< HEAD
             margin-top:100px;
             margin-bottom: 100px}
 h1,h2,h3,h4,h5 {font-family: 'Abel', sans-serif;
@@ -17,6 +18,29 @@ p, a, li, summary,label {font-family: 'Open Sans', sans-serif;
                         font-weight: normal;}
 a {text-decoration: none;}
 main h2, main h3{margin-left: 10px;}
+=======
+  margin-top:100px;
+  margin-bottom: 100px
+}
+			
+h1,h2,h3,h4,h5 {
+  font-family: 'Abel', sans-serif;
+  margin:5px;
+}
+				
+p, a, li, summary {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin:0px;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+  
+main h2, main h3, input, select {margin-left: 10px;}
+>>>>>>> c22c6c7cda0c71af93a0c1dbbbbd0218fa029467
 main p,main ul, details {padding-left: 10px;}
 main h2 {text-align: center;}
 ul {list-style-position: inside;}
@@ -80,9 +104,6 @@ main {margin-top: 100px;
 
 
 
-.logo a {
-		 opacity: 0.8;
-		 }
 
 
 
@@ -161,6 +182,7 @@ details {
         padding:10px;
         margin: 20px 10px 20px 10px;}
 .formularfeld {
+<<<<<<< HEAD
         border:1px solid;
         border-color: #808080;
         padding:10px;
@@ -206,6 +228,8 @@ button#send {
   height: 100%;
   opacity: 0;
 }
+=======
+>>>>>>> c22c6c7cda0c71af93a0c1dbbbbd0218fa029467
 /*CSS Code für den Karrierebereich -Ende*/
 
 /* Media queryDesktop */

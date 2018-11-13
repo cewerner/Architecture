@@ -55,7 +55,7 @@ header {
 }
 header div.headerinhalt {display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 10px 10px 10px 10px;
   width: 100%;}
 
@@ -65,6 +65,8 @@ header h1 {
   color: #fff;
   font-weight: normal;
 }
+
+#HWFLogo {height: 50px;}
 
 navbar {
   margin-left: 30px;
@@ -111,8 +113,8 @@ main {
 
 .logos {
   display:flex;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 20px 0px;
 }
 
 .logo {

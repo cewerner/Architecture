@@ -211,24 +211,24 @@ details {
 }
 
 .formularfeld {
-<<<<<<< HEAD
-        border:1px solid;
-        border-color: #808080;
-        padding:10px;
-        width:100%;}
-.Bewerbungsformular {display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;}
+  border:1px solid;
+  border-color: #808080;
+  padding:10px;
+  width:100%;}
+.Bewerbungsformular {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;}
 .drittel {width: 31%;}
 .Bewerbungsformular h3 {margin-left: 0px;}
 button#send {
-        padding: 10px;
-        width: 100%;
-        background-color: #808080;
-        color: #fff;
-        border:1px solid;
-        border-color: #808080;
-        margin:34px auto 0px auto;}
+  padding: 10px;
+  width: 100%;
+  background-color: #808080;
+  color: #fff;
+  border:1px solid;
+  border-color: #808080;
+  margin:34px auto 0px auto;}
 
 .file-upload {
   position: relative;
@@ -257,13 +257,6 @@ button#send {
   height: 100%;
   opacity: 0;
 }
-=======
-  border:1px solid;
-  border-color: #808080;
-  padding:10px;
-  margin:5px 10px 5px 0px;
-  width:100%;
-}
 
 .Bewerbungsformular {
   display: flex;
@@ -280,7 +273,6 @@ button#send {
 }
 
 .Bewerbungsformular h3 {margin-left: 0px}
->>>>>>> c22c6c7cda0c71af93a0c1dbbbbd0218fa029467
 /*CSS Code für den Karrierebereich -Ende*/
 
 
@@ -321,6 +313,10 @@ button#send {
 
       #menubutton {display:inline;}
       /*CSS Code für Header und Menü - Ende*/
+
+      /*CSS Code für Referenzen und Partner - Start*/
+      .logo a {opacity: 1;}
+      /*CSS Code für Referenzen und Partner - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
         .hovertitle.portfolio {width: 45%;}
@@ -369,6 +365,10 @@ button#send {
 
       #menubutton {display:inline;}
       /*CSS Code für Header und Menü - Ende*/
+
+      /*CSS Code für Referenzen und Partner - Start*/
+      .logo a {opacity: 1;}
+      /*CSS Code für Referenzen und Partner - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
         .galerie {

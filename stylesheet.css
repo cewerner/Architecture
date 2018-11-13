@@ -39,6 +39,7 @@ main h2, main h3, input, select {margin-left: 10px;}
 main p,main ul, details {padding-left: 10px;}
 main h2 {text-align: center;}
 ul {list-style-position: inside;}
+.mitte {text-align: center;}
 
 
 
@@ -46,16 +47,17 @@ ul {list-style-position: inside;}
 header {
   position:fixed;
   top: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  padding: 10px 10px 10px 10px;
   width: 100%;
   min-height: 70px;
   z-index: 7;
   background-color: #808080;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
 }
+header div.headerinhalt {display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 10px 10px 10px;
+  width: 100%;}
 
 header h1 {
   margin-block-start: 0.3em;

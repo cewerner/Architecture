@@ -172,11 +172,10 @@ main {
   right: 0;
   align-items: center;
   z-index: 1;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   line-height: 1.1em;
-  opacity: 0;
+  display:none;
   z-index: 2;
 }
 
@@ -185,14 +184,14 @@ main {
   margin: 0;
 }
 
-/* Dieser Teil macht das Bild bei Hover dunkler*/.hovertitle:hover > img,
-.hovertitle.hover > img {
+/* Dieser Teil macht das Bild bei Hover dunkler*/
+.hovertitle:hover > img {
   opacity: 0.5;
 }
 
-/*Dieser Teil macht, dass die Schrift bei Hover sichtbar ist*/.hovertitle:hover figcaption,
-.hovertitle.hover figcaption {
-  opacity: 1;
+/*Dieser Teil macht, dass die Schrift bei Hover sichtbar ist*/
+.hovertitle:hover figcaption {
+  display:flex;
 }
 /*CSS Code für Bildergalerie - Ende*/
 

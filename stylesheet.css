@@ -255,10 +255,10 @@ summary:focus {outline:none;}
 button#send {
         padding: 10px;
         width: 100%;
-        background-color: #22547a;
+        background-color: #4b5c69;
         color: #fff;
         border:1px solid;
-        border-color: #22547a;
+        border-color: #4b5c69;
         margin:44px auto 0px auto;}
 
 .file-upload {

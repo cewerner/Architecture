@@ -37,7 +37,7 @@ p, a, li, summary, label {
   font-size: 16px;
   margin:0px;
   font-weight: normal;
-  color:#808080;
+  color:#4b5c69;
 }
 
 a {
@@ -60,7 +60,7 @@ header {
   width: 100%;
   min-height: 70px;
   z-index: 7;
-  background-color: #808080;
+  background-color: #4b5c69;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
 }
 header div.headerinhalt {display: flex;
@@ -234,7 +234,7 @@ iframe {
 /*CSS Code für den Karrierebereich -Start*/
 details {
   border:1px solid;
-  border-color: #808080;
+  border-color: #4b5c69;
   padding:10px;
   margin: 20px 10px 20px 10px;
 }
@@ -243,7 +243,7 @@ summary:focus {outline:none;}
 
 .formularfeld {
         border:1px solid;
-        border-color: #808080;
+        border-color: #4b5c69;
         padding:10px;
         width:100%;
         margin: 0px;}
@@ -255,10 +255,10 @@ summary:focus {outline:none;}
 button#send {
         padding: 10px;
         width: 100%;
-        background-color: #808080;
+        background-color: #22547a;
         color: #fff;
         border:1px solid;
-        border-color: #808080;
+        border-color: #22547a;
         margin:44px auto 0px auto;}
 
 .file-upload {
@@ -270,10 +270,10 @@ button#send {
 .file-upload__label {
   display: block;
   padding: 10px;
-  background-color: #808080;
+  background-color: #4b5c69;
   color: #fff;
   border:1px solid;
-  border-color: #808080;
+  border-color: #4b5c69;
   opacity: 0.5;
 }
 

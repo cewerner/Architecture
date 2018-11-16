@@ -8,6 +8,11 @@ html, body {
   width: 100%;
 }
 
+main {
+  margin-top: 70px;
+  display: block;
+}
+
 .nichtbreiter{
   max-width: 1080px;
   margin:0px auto;
@@ -52,14 +57,13 @@ ul {list-style-position: inside;}
 .mitte {text-align: center;}
 
 
-
 /*CSS Code für Header und Menü - Start*/
 header {
   position:fixed;
   top: 0;
   width: 100%;
   min-height: 70px;
-  z-index: 7;
+  z-index: 10;
   background-color: #4b5c69;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
 }
@@ -112,12 +116,44 @@ navbar ul li a {
 }
 /*CSS Code für Header und Menü - Ende*/
 
+/*CSS Code für Slider - Start*/
+.slider {
+        width: 100%;
+        margin: 20px auto;
+    }
 
-main {
-  margin-top: 100px;
-  display: block;
-}
+    .slick-slide {
+      margin: 0px 0px;
+    }
 
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+    }
+
+    .slick-next {
+      right: 15px;
+      z-index: 9;
+    }
+
+    .slick-prev {
+      left:15px;
+      z-index: 9;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+/*CSS Code für Slider - Ende*/
 
 /*CSS Code für Referenzen und Partner - Start*/
 .banner {

@@ -63,9 +63,10 @@ $('figure').mouseout(function(){
 /*Hovereffekt Galerie - Ende*/
 
 /*Bildtexte bei Klick ein und ausblenden - Start*/
-$('figure').click(function(){
+/*$('figure').on("click tap", function(){
   if (screenWidth <= 1079){
       if ($('figcaption').is(':hidden')){
+        console.log('test');
         $('figcaption').css({'display':'flex'});
         $('figure img').css({'opacity':'0.5'});
       }
@@ -74,7 +75,7 @@ $('figure').click(function(){
         $('figure img').css({'opacity':'1'});
       }
   }
-});
+});*/
 /*Bildtexte bei Klick ein und ausblenden - Ende*/
 
 });

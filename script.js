@@ -61,7 +61,6 @@ $('figure').click(function(){
       else {
         $('figcaption').css({'display':'none'});
         $('figure img').css({'opacity':'1'});
-        return;
       }
   }
 });

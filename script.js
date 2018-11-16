@@ -51,6 +51,17 @@ if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 });
 /*Smooth scrolling -Ende*/
 
+/*Hovereffekt Galerie - Start*/
+/*$('figure').mouseover(function(){
+  $('figcaption').css({'display':'flex'});
+  $('figure img').css({'opacity':'0.5'});
+});
+$('figure').mouseout(function(){
+  $('figcaption').hide();
+  $('figure img').css({'opacity':'1'});
+});*/
+/*Hovereffekt Galerie - Ende*/
+
 /*Bildtexte bei Klick ein und ausblenden - Start*/
 $('figure').click(function(){
   if (screenWidth <= 1079){
@@ -59,7 +70,7 @@ $('figure').click(function(){
         $('figure img').css({'opacity':'0.5'});
       }
       else {
-        $('figcaption').css({'display':'none'});
+        $('figcaption').hide();
         $('figure img').css({'opacity':'1'});
       }
   }

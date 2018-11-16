@@ -24,11 +24,20 @@ h1,h2,h3,h4,h5 {
   line-height: 1;
 }
 
+h1,h2 {
+	color: #2e70a3;
+}
+
+h3,h4 { 
+	color: #4b5c69;
+}
+
 p, a, li, summary, label {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin:0px;
   font-weight: normal;
+  color:#808080;
 }
 
 a {
@@ -108,7 +117,7 @@ main {
 
 /*CSS Code für Referenzen und Partner - Start*/
 .banner {
-  background-color: #808080;
+  background-color: #4b5c69;
   width: 100%
 }
 
@@ -285,12 +294,17 @@ button#send {
 .impressum {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+}
+	
 #Impressum { 
 	background-color:#808080;
-	color: white;
-	padding: 50px 0px;
+    padding: 50px 0px;
 	margin: 0px;
+}
+
+#Impressum h3, #Impressum h4, #Impressum p {
+		color: white;
 }
 /* CSS Code für Impressum - Ende */
 

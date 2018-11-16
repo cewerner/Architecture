@@ -28,7 +28,7 @@ h1,h2 {
 	color: #22547a;
 }
 
-h3,h4 { 
+h3,h4 {
 	color: #4b5c69;
 }
 
@@ -37,7 +37,7 @@ p, a, li, summary, label {
   font-size: 16px;
   margin:0px;
   font-weight: normal;
-  color:#808080;
+  color:#4b5c69;
 }
 
 a {
@@ -60,11 +60,12 @@ header {
   width: 100%;
   min-height: 70px;
   z-index: 7;
-  background-color: #808080;
+  background-color: #4b5c69;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
 }
 header div.headerinhalt {display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 10px 10px 10px 10px;
   width: 100%;}
@@ -76,7 +77,10 @@ header h1 {
   font-weight: normal;
 }
 
-#HWFLogo {height: 50px;}
+#HWFLogo {
+  height: 50px;
+  margin: 2.5px auto auto 10px;
+}
 
 navbar {
   margin-left: 30px;
@@ -145,6 +149,16 @@ main {
 
 
 /*CSS Code für Bildergalerie und Team- Start*/
+/* Dieser Teil macht das Bild bei Hover dunkler*/
+.hovertitle:hover > img {
+  opacity: 0.5;
+}
+
+/*Dieser Teil macht, dass die Schrift bei Hover sichtbar ist*/
+.hovertitle:hover figcaption {
+  display:flex;
+}
+
 .galerie {
   display: flex;
   flex-direction: row;
@@ -194,15 +208,7 @@ main {
   margin: 0;
 }
 
-/* Dieser Teil macht das Bild bei Hover dunkler*/
-.hovertitle:hover > img {
-  opacity: 0.5;
-}
 
-/*Dieser Teil macht, dass die Schrift bei Hover sichtbar ist*/
-.hovertitle:hover figcaption {
-  display:flex;
-}
 /*CSS Code für Bildergalerie - Ende*/
 
 
@@ -228,14 +234,16 @@ iframe {
 /*CSS Code für den Karrierebereich -Start*/
 details {
   border:1px solid;
-  border-color: #808080;
+  border-color: #4b5c69;
   padding:10px;
   margin: 20px 10px 20px 10px;
 }
 
+summary:focus {outline:none;}
+
 .formularfeld {
         border:1px solid;
-        border-color: #808080;
+        border-color: #4b5c69;
         padding:10px;
         width:100%;
         margin: 0px;}
@@ -247,10 +255,10 @@ details {
 button#send {
         padding: 10px;
         width: 100%;
-        background-color: #808080;
+        background-color: #22547a;
         color: #fff;
         border:1px solid;
-        border-color: #808080;
+        border-color: #22547a;
         margin:44px auto 0px auto;}
 
 .file-upload {
@@ -262,10 +270,10 @@ button#send {
 .file-upload__label {
   display: block;
   padding: 10px;
-  background-color: #808080;
+  background-color: #4b5c69;
   color: #fff;
   border:1px solid;
-  border-color: #808080;
+  border-color: #4b5c69;
   opacity: 0.5;
 }
 
@@ -296,8 +304,8 @@ button#send {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-	
-#Impressum { 
+
+#Impressum {
 	background-color:#4b4b4b;
     padding: 50px 0px;
 	margin: 0px;
@@ -332,14 +340,14 @@ button#send {
       navbar {
 		display: none;
         width: 100%;
-        max-width: 648px;
-        margin: 0px auto 0px 205.5px;
+        max-width: 767px;
+        margin: 0px auto 0px 141.5px;
 	  }
 
       navbar ul {flex-direction: column;}
 
       navbar ul li {
-		border-bottom: 1px solid;
+		    border-bottom: 1px solid;
         border-color: rgba(255,255,255,0.5);
       }
 
@@ -373,6 +381,10 @@ button#send {
       /*CSS Code für Kontakt- Ende*/
 	}
 
+
+
+
+
 /* Portrait Smartphones */
     @media screen and (max-width:400px){
       /* Smartphone CSS */
@@ -385,7 +397,7 @@ button#send {
       navbar {
 	    display: none;
         width:100%;
-        margin: 0px 205.5px 0px 205.5px;
+        margin: 0px 141.5px 0px 141.5px;
 	  }
 
       navbar ul {flex-direction: column;}

@@ -21,6 +21,7 @@ html, body {
 h1,h2,h3,h4,h5 {
   font-family: 'Abel', sans-serif;
   margin:10px;
+  line-height: 1;
 }
 
 p, a, li, summary, label {
@@ -285,6 +286,12 @@ button#send {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;}
+#Impressum { 
+	background-color:#808080;
+	color: white;
+	padding: 50px 0px;
+	margin: 0px;
+}
 /* CSS Code für Impressum - Ende */
 
 

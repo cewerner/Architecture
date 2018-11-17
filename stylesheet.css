@@ -204,6 +204,7 @@ navbar ul li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  color:white;
 }
 
 .hovertitle {

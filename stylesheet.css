@@ -338,11 +338,18 @@ navbar ul li:active a{opacity:1}
 
 /*CSS Code für den Kontakt -Start*/
 .kontakt {display: flex;}
-.kontakt p {
+.kontakt>div {
   flex:0 1 400px;
-  min-height: 300px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.socialmedia img {
+  width:58px;
+  margin-right: 10px;
+}
 iframe {
   border: none;
   flex:1 1 680px;
@@ -526,12 +533,19 @@ input#send {
       /*CSS Code für Kontakt- Start*/
         .kontakt {flex-direction: column;}
 
-    		.kontakt p {
+    		.kontakt>div {
     		  width: 100%;
           max-height: 200px;
     		  min-height: 0px;
+          flex-direction: row;
     		}
-
+        .socialmedia {
+          display:flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+        .socialmedia img {
+          margin-right: 0px;}
         iframe {
 		      width: 100%;
           max-height: 300px;
@@ -596,11 +610,19 @@ input#send {
         /*CSS Code für Kontakt- Start*/
         .kontakt {flex-direction: column;}
 
-        .kontakt p {
-		      width: 100%;
+        .kontakt>div {
+    		  width: 100%;
           max-height: 150px;
-          min-height: 0px;
-		    }
+    		  min-height: 0px;
+          flex-direction: row;
+    		}
+        .socialmedia {
+          display:flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+        .socialmedia img {
+          margin-right: 0px;}
 
         iframe {
 		      width: 100%;

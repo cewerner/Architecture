@@ -114,7 +114,6 @@ navbar ul {
 
 navbar ul li {
   display: inline-block;
-  padding: 5px;
 }
 
 navbar ul li a {
@@ -123,6 +122,9 @@ navbar ul li a {
   font-family: 'Abel', sans-serif;
   font-size: 18px;
   opacity: 0.7;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
 }
 
 navbar ul li:hover a{opacity:1}

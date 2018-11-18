@@ -225,9 +225,50 @@ navbar ul li:active a{opacity:1}
 .logos .nichtbreiter {
 	padding-top: 0px;
 }
-
-
 /*CSS Code für Referenzen und Partner - Ende*/
+
+
+
+/*CSS Code für Philosophie - Start */
+	/*CSS Parallax - Start*/
+
+
+	body, html {
+		height: 100%;
+	}
+
+	.parallax {
+		/* The image used */
+		background-image: url('./images/ParallaxBild.jpg');
+
+		/* Full height */
+		height: 100%; 
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 10px;
+	}
+
+/*CSS Parallax - Ende*/
+
+
+#Philosophie {
+	margin: 20px;
+	background-color: black;
+	opacity: 0.5;
+	padding: 10px;
+}
+
+#Philosophie p, #Philosophie h2 {
+	color: white;
+	opacity: 1;
+}
+
+/*CSS Code für Philosophie - Ende */
+
 
 
 /*---CSS Code für Bildergalerie und Team- Start*/
@@ -407,6 +448,7 @@ button#send {
     min-width: 202px;
     margin-left: 10px;}
 /* CSS Code für Impressum - Ende */
+
 
 
 

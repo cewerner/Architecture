@@ -9,7 +9,7 @@ html, body {
 }
 
 main {
-  margin-top: 70px;
+  /*margin-top: 70px;*/
   display: block;
 }
 
@@ -25,21 +25,23 @@ main {
 
 h1,h2,h3,h4,h5 {
   font-family: 'Abel', sans-serif;
-  margin:10px;
+  /*margin:10px;*/
   line-height: 1;
 }
 
 h1,h2 {
 	color: #22547a;
+	font-size: 23px;
 }
 
 h3,h4 {
 	color: #4b5c69;
+	font-size: 23px;
 }
 
 p, a, li, summary, label {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   margin:0px;
   font-weight: normal;
   color:#4b5c69;
@@ -50,8 +52,8 @@ a {
   color:inherit;
 }
 
-main h2, main h3, input, select {margin-left: 10px;}
-main p,main ul, details {padding-left: 10px;}
+/*main h2, main h3, input, select {margin-left: 10px;} 
+main p,main ul, details {padding-left: 10px;}*/
 main h2 {text-align: center;}
 ul {list-style-position: inside;}
 .mitte {text-align: center;}
@@ -64,8 +66,8 @@ header {
   width: 100%;
   min-height: 70px;
   z-index: 10;
-  background-color: #4b5c69;
-  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
+  /*background-color: #4b5c69;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);*/
 }
 header div.headerinhalt {display: flex;
   justify-content: space-between;
@@ -80,6 +82,18 @@ header h1 {
   color: #fff;
   font-weight: normal;
 }
+
+
+#Header  {
+	background-color: transparent;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
 
 #HWFLogo {
   height: 50px;
@@ -107,7 +121,12 @@ navbar ul li a {
   text-decoration: none;
   color: #fff;
   font-family: 'Abel', sans-serif;
+  font-size: 18px;
+  opacity: 0.5;
 }
+
+navbar ul li a:hover {opacity:1}
+navbar ul li a:active {opacity:1}
 
 #menubutton {
   display:none;
@@ -117,9 +136,15 @@ navbar ul li a {
 /*CSS Code für Header und Menü - Ende*/
 
 /*CSS Code für Slider - Start*/
+
+#Slider{
+	position: relative;
+
+}
+
 .slider {
         width: 100%;
-        margin: 20px auto;
+       /* margin: 20px auto;*/
     }
 
     .slick-slide {
@@ -157,6 +182,8 @@ navbar ul li a {
       opacity: 1;
     }
 
+	
+
 /*CSS Code für Slider - Ende*/
 
 /*CSS Code für Referenzen und Partner - Start*/
@@ -165,9 +192,19 @@ navbar ul li a {
   width: 100%
 }
 
+.banner h2 {
+		color:white;
+		padding-top: 20px;
+		margin: 0px;
+		opacity: 0.5;
+}
+#Referenzen .banner{
+
+}
+
 .logos {
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px 0px;
 }
 
@@ -181,14 +218,17 @@ navbar ul li a {
 
 .logo a {opacity: 0.5;}
 
-
 .logo a:hover {opacity:1}
+
+.logos .nichtbreiter {
+	padding-top: 0px;
+}
 
 
 /*CSS Code für Referenzen und Partner - Ende*/
 
 
-/*CSS Code für Bildergalerie und Team- Start*/
+/*---CSS Code für Bildergalerie und Team- Start*/
 /* Dieser Teil macht das Bild bei Hover dunkler*/
 .hovertitle:hover > img {
   opacity: 0.5;
@@ -204,6 +244,7 @@ navbar ul li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
 
 .hovertitle {
@@ -248,7 +289,9 @@ navbar ul li a {
   font-weight: 400;
   margin: 0;
 }
+/* schrift auf bildern*/
 
+#Portfolio h3,#Portfolio p,#Team h3, #Team p {color: white;}
 
 /*CSS Code für Bildergalerie - Ende*/
 
@@ -347,13 +390,14 @@ button#send {
 }
 
 #Impressum {
-	background-color:#4b4b4b;
+	background-color:#313f4b;
     padding: 50px 0px;
 	margin: 0px;
 }
 
 #Impressum h3, #Impressum h4, #Impressum p {
 		color: white;
+		opacity:0.5;
 }
 /* CSS Code für Impressum - Ende */
 

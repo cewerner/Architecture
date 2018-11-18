@@ -495,7 +495,7 @@ button#send {
       /*CSS Code für Bildergalerie und Team- Start*/
         .portfolio {max-width: 45%;}
 
-		    .team {min-width: 0px;}
+		    .team, .team img, .team figcaption {min-width: 0px;}
 		 /*CSS Code für Bildergalerie und Team- Ende*/
 
         /*CSS Code für Kontakt- Start*/

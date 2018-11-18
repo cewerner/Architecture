@@ -215,12 +215,13 @@ navbar ul li a {
   overflow: hidden;
   position: relative;
   text-align: center;
-  max-width: 400px;
+  max-width: 523.5px;
+  max-height: 523.5px;
 }
 
-.hovertitle.portfolio {width: 30%;}
+.hovertitle.portfolio {max-width: 33%;}
 
-.hovertitle.team {width: 30%;}
+.hovertitle.team {width: 33%;}
 
 .hovertitle img {
   vertical-align: top;
@@ -399,7 +400,7 @@ button#send {
       /*CSS Code für Referenzen und Partner - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
-        .hovertitle.portfolio {width: 45%;}
+        .hovertitle.portfolio {max-width: 45%;}
 
 		.hovertitle.team {min-width: none;}
 		 /*CSS Code für Bildergalerie und Team- Ende*/
@@ -459,9 +460,9 @@ button#send {
 		  flex-direction: column;
           align-items: center;
 		}
-        .hovertitle.portfolio {width: 90%;}
+        .hovertitle.portfolio {max-width: 100%;}
 
-        .hovertitle.team {width: 90%;}
+        .hovertitle.team {max-width: 100%;}
         /*CSS Code für Bildergalerie und Team- Ende*/
 
         /*CSS Code für Kontakt- Start*/

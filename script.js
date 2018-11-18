@@ -1,10 +1,29 @@
 $(document).ready(function(){
+
+
+/*Slider - Start*/
 $('.autoplay').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
 });
+/*Slider - Ende*/
+
+/*Navigation bekommt HG Farbe - Start*/
+
+var positionSmall = 0;
+    $(document).scroll(function () {
+        positionSmall = $(this).scrollTop();
+        if (positionSmall > 140) {
+            $("#Header").css('background-color', '#4b5c69');
+        } else {
+            $("#Header").css('background-color', '');
+        }
+    });
+
+/*Navigation bekommt HG Farbe - Ende*/
+
 /*Responsive Burgermenü - Start*/
 $(function() {
   var menuVisible = false;

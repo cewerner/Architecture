@@ -52,7 +52,7 @@ a {
   color:inherit;
 }
 
-/*main h2, main h3, input, select {margin-left: 10px;} 
+/*main h2, main h3, input, select {margin-left: 10px;}
 main p,main ul, details {padding-left: 10px;}*/
 main h2 {text-align: center;}
 ul {list-style-position: inside;}
@@ -182,7 +182,7 @@ navbar ul li a:active {opacity:1}
       opacity: 1;
     }
 
-	
+
 
 /*CSS Code für Slider - Ende*/
 
@@ -343,7 +343,7 @@ button#send {
         color: #fff;
         border:1px solid;
         border-color: #4b5c69;
-        margin:44px auto 0px auto;}
+        margin:69px auto 0px auto;}
 
 .file-upload {
   position: relative;

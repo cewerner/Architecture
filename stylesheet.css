@@ -16,6 +16,7 @@ main {
 .nichtbreiter{
   max-width: 1080px;
   margin:0px auto;
+  padding:0px;
 }
 
 .container {
@@ -73,7 +74,7 @@ header div.headerinhalt {display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 0px;
   width: 100%;}
 
 header h1 {
@@ -97,7 +98,7 @@ header h1 {
 
 #HWFLogo {
   height: 50px;
-  margin: 2.5px auto auto 10px;
+  margin: 2.5px auto auto 0px;
 }
 
 navbar {
@@ -184,8 +185,6 @@ navbar ul li:active a{opacity:1}
       opacity: 1;
     }
 
-
-
 /*CSS Code für Slider - Ende*/
 
 /*CSS Code für Referenzen und Partner - Start*/
@@ -206,7 +205,7 @@ navbar ul li:active a{opacity:1}
 
 .logos {
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px 0px;
 }
 
@@ -228,49 +227,6 @@ navbar ul li:active a{opacity:1}
 /*CSS Code für Referenzen und Partner - Ende*/
 
 
-
-/*CSS Code für Philosophie - Start */
-	/*CSS Parallax - Start*/
-
-
-	body, html {
-		height: 100%;
-	}
-
-	.parallax {
-		/* The image used */
-		background-image: url('./images/ParallaxBild.jpg');
-
-		/* Full height */
-		height: 100%;
-
-		/* Create the parallax scrolling effect */
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding: 10px;
-	}
-
-/*CSS Parallax - Ende*/
-
-
-#Philosophie {
-	margin: 20px;
-	background-color: black;
-	opacity: 0.5;
-	padding: 10px;
-}
-
-#Philosophie p, #Philosophie h2 {
-	color: white;
-	opacity: 1;
-}
-
-/*CSS Code für Philosophie - Ende */
-
-
-
 /*---CSS Code für Bildergalerie und Team- Start*/
 /* Dieser Teil macht das Bild bei Hover dunkler*/
 .hovertitle:hover > img {
@@ -286,26 +242,26 @@ navbar ul li:active a{opacity:1}
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 
-.hovertitle {
+.hovertitle.portfolio, .hovertitle.team {
   background-color: #000;
   color: #fff;
   display: block;
   font-family: 'Open Sans', sans-serif;
-  margin: 8px;
   overflow: hidden;
   position: relative;
   text-align: center;
-  max-width: 523.5px;
-  max-height: 523.5px;
+  max-width: /*523.5px*/32.73%;
+  max-height: 32.73%;
+  margin:0.3%;
 }
+/*
+.hovertitle.portfolio {max-width: 354px;}
 
-.hovertitle.portfolio {max-width: 31%;}
-
-.hovertitle.team {max-width: 31%;}
+.hovertitle.team {max-width: 354px;}*/
 
 .hovertitle img {
   vertical-align: top;
@@ -338,6 +294,45 @@ navbar ul li:active a{opacity:1}
 
 /*CSS Code für Bildergalerie - Ende*/
 
+
+/*CSS Code für Philosophie - Start */
+	/*CSS Parallax - Start*/
+
+
+	body, html {
+		height: 100%;
+	}
+
+	.parallax {
+		/* The image used */
+		background-image: url('./images/ParallaxBild.jpg');
+
+		/* Full height */
+		height: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 10px;
+	}
+
+/*CSS Parallax - Ende*/
+
+
+#Philosophie {
+	margin: 20px;
+  padding: 10px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#Philosophie p, #Philosophie h2 {
+	color: white;
+	opacity: 1;
+}
+
+/*CSS Code für Philosophie - Ende */
 
 
 
@@ -435,7 +430,7 @@ button#send {
 
 #Impressum {
 	background-color:#313f4b;
-    padding: 50px 0px;
+  padding: 50px 0px;
 	margin: 0px;
 }
 
@@ -452,7 +447,7 @@ button#send {
 
 
 
-/*-----------------------media queries-------------------------*/
+/*-------------------------------------------media queries-----------------------------------------------------*/
 
 /* Media queryDesktop */
 @media screen and(min-width:1080px)
@@ -465,27 +460,36 @@ button#send {
     @media screen and (max-width:1079px)
                   and (min-width: 401px){
       /* Tablet CSS*/
+        .nichtbreiter {padding:10px;}
       /*CSS Code für Header und Menü - Start*/
-      header {
-		flex-wrap: wrap;
-        align-items: flex-start;
-	  }
+        header {
+  		    flex-wrap: wrap;
+          align-items: flex-start;
+  	    }
 
-      navbar {
-		display: none;
-        width: 100%;
-        max-width: 767px;
-        margin: 0px auto 0px 141.5px;
-	  }
+        header div.headerinhalt{
+          padding: 10px 0px;
+        }
 
-      navbar ul {flex-direction: column;}
+        #HWFLogo {
+          margin: 2.5px auto auto 10px;
+        }
 
-      navbar ul li {
-		    border-bottom: 1px solid;
-        border-color: rgba(255,255,255,0.5);
-      }
+        navbar {
+  		    display: none;
+          width: 100%;
+          max-width: 767px;
+          margin: 0px auto 0px 141.5px;
+  	    }
 
-      #menubutton {display:inline;}
+        navbar ul {flex-direction: column;}
+
+        navbar ul li {
+  		    border-bottom: 1px solid;
+          border-color: rgba(255,255,255,0.5);
+        }
+
+        #menubutton {display:inline;}
       /*CSS Code für Header und Menü - Ende*/
 
       /*CSS Code für Referenzen und Partner - Start*/
@@ -493,25 +497,25 @@ button#send {
       /*CSS Code für Referenzen und Partner - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
-        .portfolio {max-width: 45%;}
+        .hovertitle.portfolio {
+          max-width: 49.4%;}
+        .hovertitle.team {max-width: 32.73%;}
+		  /*CSS Code für Bildergalerie und Team- Ende*/
 
-		    .team, .team img, .team figcaption {min-width: 0px;}
-		 /*CSS Code für Bildergalerie und Team- Ende*/
-
-        /*CSS Code für Kontakt- Start*/
+      /*CSS Code für Kontakt- Start*/
         .kontakt {flex-direction: column;}
 
-		.kontakt p {
-		  width: 100%;
+    		.kontakt p {
+    		  width: 100%;
           max-height: 200px;
-		  min-height: 0px;
-		}
+    		  min-height: 0px;
+    		}
 
         iframe {
-		  width: 100%;
+		      width: 100%;
           max-height: 300px;
           min-height: 0px;
-		}
+		    }
       /*CSS Code für Kontakt- Ende*/
 	}
 
@@ -521,27 +525,36 @@ button#send {
 
 /* Portrait Smartphones */
     @media screen and (max-width:400px){
-      /* Smartphone CSS */
+    /* Smartphone CSS */
+        .nichtbreiter {padding:10px;}
       /*CSS Code für Header und Menü - Start*/
-      header {
-		flex-wrap: wrap;
-        align-items: flex-start;
-	  }
+        header {
+  		    flex-wrap: wrap;
+          align-items: flex-start;
+  	    }
 
-      navbar {
-	    display: none;
-        width:100%;
-        margin: 0px 141.5px 0px 141.5px;
-	  }
+        header div.headerinhalt{
+          padding: 10px 0px;
+        }
 
-      navbar ul {flex-direction: column;}
+        #HWFLogo {
+          margin: 2.5px auto auto 10px;
+        }
 
-      navbar ul li {
-		border-bottom: 1px solid;
-        border-color: rgba(255,255,255,0.5);
-      }
+        navbar {
+  	      display: none;
+          width:100%;
+          margin: 0px 141.5px 0px 141.5px;
+  	    }
 
-      #menubutton {display:inline;}
+        navbar ul {flex-direction: column;}
+
+        navbar ul li {
+  		    border-bottom: 1px solid;
+          border-color: rgba(255,255,255,0.5);
+        }
+
+        #menubutton {display:inline;}
       /*CSS Code für Header und Menü - Ende*/
 
       /*CSS Code für Referenzen und Partner - Start*/
@@ -550,28 +563,28 @@ button#send {
 
       /*CSS Code für Bildergalerie und Team- Start*/
         .galerie {
-		  flex-direction: column;
+		      flex-direction: column;
           align-items: center;
-		}
-        .hovertitle.portfolio {max-width: 100%;}
+		     }
+        .hovertitle.portfolio {max-width: 394px;}
 
-        .hovertitle.team {max-width: 100%;}
+        .hovertitle.team {max-width: 394px;}
         /*CSS Code für Bildergalerie und Team- Ende*/
 
         /*CSS Code für Kontakt- Start*/
         .kontakt {flex-direction: column;}
 
         .kontakt p {
-		  width: 100%;
+		      width: 100%;
           max-height: 150px;
           min-height: 0px;
-		}
+		    }
 
         iframe {
-		  width: 100%;
+		      width: 100%;
           max-height: 150px;
           min-height: 0px;
-		}
+		    }
 
       /*CSS Code für Kontakt- Ende*/
     }

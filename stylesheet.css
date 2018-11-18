@@ -262,9 +262,9 @@ navbar ul li:active a{opacity:1}
   max-height: 523.5px;
 }
 
-.hovertitle.portfolio {max-width: 33%;}
+.hovertitle.portfolio {max-width: 31%;}
 
-.hovertitle.team {width: 33%;}
+.hovertitle.team {max-width: 31%;}
 
 .hovertitle img {
   vertical-align: top;
@@ -335,7 +335,8 @@ summary:focus {outline:none;}
         margin: 0px;}
 .Bewerbungsformular {display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-around;}
+                    justify-content: space-around;
+                    align-items: stretch;}
 .drittel {width: 31%;}
 .Bewerbungsformular h3 {margin-left: 0px;}
 button#send {
@@ -401,6 +402,10 @@ button#send {
 		color: white;
 		opacity:0.5;
 }
+.impressum div {
+    display: block;
+    min-width: 202px;
+    margin-left: 10px;}
 /* CSS Code für Impressum - Ende */
 
 
@@ -448,7 +453,7 @@ button#send {
       /*CSS Code für Bildergalerie und Team- Start*/
         .hovertitle.portfolio {max-width: 45%;}
 
-		.hovertitle.team {min-width: none;}
+		.hovertitle.team {min-width: 0px;}
 		 /*CSS Code für Bildergalerie und Team- Ende*/
 
         /*CSS Code für Kontakt- Start*/

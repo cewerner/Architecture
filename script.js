@@ -12,19 +12,23 @@ $('.autoplay').slick({
 
 /*Navigation bekommt HG Farbe - Start*/
 
-var positionSmall = 0;
-    $(document).scroll(function () {
-        positionSmall = $(this).scrollTop();
-        if (positionSmall > 140) {
-            $("#Header").css({'background-color': '#4b5c69',
-                              'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
-        } else {
-            $("#Header").css({'background-color': ''});
-            $("#Header").css({'box-shadow': ''});
-        }
-    });
+$(document).scroll(function () {
+    var position = 0;
+    position = $(this).scrollTop();
+    if (position > 140) {
+        $("#Header").css({'background-color': '#4b5c69',
+                          'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
+    } else {
+        $("#Header").css({'background-color': ''});
+        $("#Header").css({'box-shadow': ''});
+    }
+});
 
 /*Navigation bekommt HG Farbe - Ende*/
+
+/*Scrollspy - Start*/
+
+/*Scrollspy - Ende*/
 
 /*Responsive Burgermenü - Start*/
 $(function() {
@@ -55,7 +59,7 @@ var screenWidth = $(window).width();
 $('body, html').css('overflow','visible');
 
   if (screenWidth >= 1080){
-        if (positionSmall > 90) {
+        if (position > 90) {
             $("#Header").css({'background-color': '#4b5c69',
                               'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
         } else {

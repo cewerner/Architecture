@@ -380,7 +380,7 @@ summary:focus {outline:none;}
         min-width: 222px;}
 .Bewerbungsformular h3 {margin-left: 0px;
         min-width: 202px;}
-button#send {
+input#send {
         padding: 10px;
         width: 100%;
         background-color: #4b5c69;
@@ -517,9 +517,7 @@ button#send {
         }
         .Bewerbungsformular h3 {
               min-width: 230px;}
-        /*.eingabefeld, .file-upload__label {
-              min-width: 250px;
-        }*/
+
         .file-upload {
               display: flex;
               justify-content: flex-end;}

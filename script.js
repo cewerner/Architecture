@@ -124,4 +124,31 @@ $('figure').mouseout(function(){
   }
 });*/
 /*Bildtexte bei Klick ein und ausblenden - Ende*/
+
+/*Formular auslesen - Start*/
+$('#send').click(function(){
+  var Anrede = document.querySelector("#anrede").value;
+  var Vorname = document.querySelector("#vorname").value;
+  var Nachname = document.querySelector("#nachname").value;
+  var Straße = document.querySelector("#straße").value;
+  var Plz = document.querySelector("#plz").value;
+  var Ort = document.querySelector("#ort").value;
+  var Email = document.querySelector("#email").value;
+  var Telefon = document.querySelector("#mobil").value;
+  
+  var AngabenKorrekt = confirm(`Bitte überprüfen Sie, ob Ihre Angaben korrekt sind:
+    ${Anrede} ${Vorname} ${Nachname}
+    wohnhaft in:
+    ${Straße}
+    ${Plz} ${Ort}
+    Email: ${Email}
+    Telefonnummer: ${Telefon}`);
+  if (AngabenKorrekt == true){
+    $('.eingabefeld').val('');
+    alert('Ihr Formular wurde abgeschickt!');
+  }
+  else {alert('Bitte ändern Sie ihre Angaben!');
+  };
+});
+/*Formular auslesen - Ende*/
 });

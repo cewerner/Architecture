@@ -358,12 +358,12 @@ details {
   border:1px solid;
   border-color: #4b5c69;
   padding:10px;
-  margin: 20px 10px 20px 10px;
+  margin: 20px 0px;
 }
 
 summary:focus {outline:none;}
 
-.formularfeld {
+.eingabefeld {
         border:1px solid;
         border-color: #4b5c69;
         padding:10px;
@@ -371,10 +371,15 @@ summary:focus {outline:none;}
         margin: 0px;}
 .Bewerbungsformular {display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: space-between;
                     align-items: stretch;}
-.drittel {width: 31%;}
-.Bewerbungsformular h3 {margin-left: 0px;}
+.formularteil {
+        display:flex;
+        flex-direction: column;
+        width: 31%;
+        min-width: 222px;}
+.Bewerbungsformular h3 {margin-left: 0px;
+        min-width: 202px;}
 button#send {
         padding: 10px;
         width: 100%;
@@ -386,7 +391,6 @@ button#send {
 
 .file-upload {
   position: relative;
-  display: inline-block;
   width: 100%;
 }
 
@@ -398,6 +402,7 @@ button#send {
   border:1px solid;
   border-color: #4b5c69;
   opacity: 0.5;
+  width: 100%;
 }
 
 .file-upload__input {
@@ -411,7 +416,6 @@ button#send {
   height: 100%;
   opacity: 0;
 }
-.drittel {width: 31%;}
 
 .breit {
   width: 100%;
@@ -431,7 +435,7 @@ button#send {
 #Impressum {
 	background-color:#313f4b;
   padding: 50px 0px;
-	margin: 0px;
+	margin: 100px 0px 0px 0px;
 }
 
 #Impressum h3, #Impressum h4, #Impressum p {
@@ -497,10 +501,29 @@ button#send {
       /*CSS Code für Referenzen und Partner - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
-        .hovertitle.portfolio {
-          max-width: 49.4%;}
-        .hovertitle.team {max-width: 32.73%;}
+        .hovertitle.portfolio, .hovertitle.team {margin:0.4%;}
+        .hovertitle.portfolio {max-width: 49.2%;}
+        .hovertitle.team {max-width: 32.53%;}
 		  /*CSS Code für Bildergalerie und Team- Ende*/
+
+      /*CSS Code für Karriere- Start*/
+        .Bewerbungsformular {flex-direction: column;}
+        .formularteil {
+              display:flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+        }
+        .Bewerbungsformular h3 {
+              min-width: 230px;}
+        /*.eingabefeld, .file-upload__label {
+              min-width: 250px;
+        }*/
+        .file-upload {
+              display: flex;
+              justify-content: flex-end;}
+      /*CSS Code für Karriere- Ende*/
 
       /*CSS Code für Kontakt- Start*/
         .kontakt {flex-direction: column;}
@@ -566,9 +589,10 @@ button#send {
 		      flex-direction: column;
           align-items: center;
 		     }
-        .hovertitle.portfolio {max-width: 394px;}
+        .hovertitle.portfolio, .hovertitle.team {margin:1%;}
+        .hovertitle.portfolio {max-width: 98%;}
 
-        .hovertitle.team {max-width: 394px;}
+        .hovertitle.team {max-width: 98%;}
         /*CSS Code für Bildergalerie und Team- Ende*/
 
         /*CSS Code für Kontakt- Start*/
@@ -587,6 +611,10 @@ button#send {
 		    }
 
       /*CSS Code für Kontakt- Ende*/
+
+      /*CSS Code für Karriere- Start*/
+        .formularteil {width: 100%;}
+      /*CSS Code für Karriere- Ende*/
     }
 
 /*------------------media queries ende------------------*/

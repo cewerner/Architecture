@@ -16,9 +16,11 @@ var positionSmall = 0;
     $(document).scroll(function () {
         positionSmall = $(this).scrollTop();
         if (positionSmall > 140) {
-            $("#Header").css('background-color', '#4b5c69');
+            $("#Header").css({'background-color': '#4b5c69',
+                              'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
         } else {
-            $("#Header").css('background-color', '');
+            $("#Header").css({'background-color': ''});
+            $("#Header").css({'box-shadow': ''});
         }
     });
 
@@ -30,10 +32,19 @@ $(function() {
   $('#menubutton').click(function() {
   if (menuVisible) {
     $('#Menü').css({'display':'none'});
+    if (positionSmall > 90) {
+        $("#Header").css({'background-color': '#4b5c69',
+                          'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
+    } else {
+        $("#Header").css({'background-color': ''});
+        $("#Header").css({'box-shadow': ''});
+    }
     menuVisible = false;
     return;
   }
-  $('#Menü').css({'display':'block'});
+  $('#Menü').css({'display':'block'})
+  $("#Header").css({'background-color':'#4b5c69',
+                  'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
   menuVisible = true;
   });
 });
@@ -44,6 +55,13 @@ var screenWidth = $(window).width();
 $('body, html').css('overflow','visible');
 
   if (screenWidth >= 1080){
+        if (positionSmall > 90) {
+            $("#Header").css({'background-color': '#4b5c69',
+                              'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
+        } else {
+            $("#Header").css({'background-color': ''});
+            $("#Header").css({'box-shadow': ''});
+        }
         $('#Menü').css({'display':'block'});
   }   else {
           $('#Menü').css({'display':'none'});

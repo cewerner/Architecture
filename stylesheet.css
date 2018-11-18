@@ -52,7 +52,7 @@ a {
   color:inherit;
 }
 
-/*main h2, main h3, input, select {margin-left: 10px;} 
+/*main h2, main h3, input, select {margin-left: 10px;}
 main p,main ul, details {padding-left: 10px;}*/
 main h2 {text-align: center;}
 ul {list-style-position: inside;}
@@ -86,11 +86,11 @@ header h1 {
 
 #Header  {
 	background-color: transparent;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out;
-    -o-transition: background-color 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-out, box-shadow 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out, box-shadow 0.5s ease-out;
+    -ms-transition: background-color 0.5s ease-out, box-shadow 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out, box-shadow 0.5s ease-out;
+    transition: background-color 0.5s ease-out, box-shadow 0.5s ease-out;
 }
 
 
@@ -114,7 +114,6 @@ navbar ul {
 
 navbar ul li {
   display: inline-block;
-  padding: 5px;
 }
 
 navbar ul li a {
@@ -122,11 +121,14 @@ navbar ul li a {
   color: #fff;
   font-family: 'Abel', sans-serif;
   font-size: 18px;
-  opacity: 0.5;
+  opacity: 0.7;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
 }
 
-navbar ul li a:hover {opacity:1}
-navbar ul li a:active {opacity:1}
+navbar ul li:hover a{opacity:1}
+navbar ul li:active a{opacity:1}
 
 #menubutton {
   display:none;
@@ -182,7 +184,7 @@ navbar ul li a:active {opacity:1}
       opacity: 1;
     }
 
-	
+
 
 /*CSS Code für Slider - Ende*/
 
@@ -297,12 +299,13 @@ navbar ul li a:active {opacity:1}
   overflow: hidden;
   position: relative;
   text-align: center;
-  max-width: 400px;
+  max-width: 523.5px;
+  max-height: 523.5px;
 }
 
-.hovertitle.portfolio {width: 30%;}
+.hovertitle.portfolio {max-width: 33%;}
 
-.hovertitle.team {width: 30%;}
+.hovertitle.team {width: 33%;}
 
 .hovertitle img {
   vertical-align: top;
@@ -383,7 +386,7 @@ button#send {
         color: #fff;
         border:1px solid;
         border-color: #4b5c69;
-        margin:44px auto 0px auto;}
+        margin:69px auto 0px auto;}
 
 .file-upload {
   position: relative;
@@ -485,7 +488,7 @@ button#send {
       /*CSS Code für Referenzen und Partner - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
-        .hovertitle.portfolio {width: 45%;}
+        .hovertitle.portfolio {max-width: 45%;}
 
 		.hovertitle.team {min-width: none;}
 		 /*CSS Code für Bildergalerie und Team- Ende*/
@@ -545,9 +548,9 @@ button#send {
 		  flex-direction: column;
           align-items: center;
 		}
-        .hovertitle.portfolio {width: 90%;}
+        .hovertitle.portfolio {max-width: 100%;}
 
-        .hovertitle.team {width: 90%;}
+        .hovertitle.team {max-width: 100%;}
         /*CSS Code für Bildergalerie und Team- Ende*/
 
         /*CSS Code für Kontakt- Start*/

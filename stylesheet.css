@@ -320,7 +320,7 @@ navbar ul li a.active {opacity:1}
 	.parallax {
 		/* The image used */
 		background-image: url('./images/ParallaxBild.jpg');
-		
+
 		/* Full height */
 		height: 100%;
 
@@ -332,7 +332,7 @@ navbar ul li a.active {opacity:1}
 		padding: 30px;
 		width:100%;
 	}
-	
+
 	.parallax-blur{
 		/* The image used */
 		background-image: url('./images/ParallaxBild-blurred.jpg');
@@ -347,7 +347,7 @@ navbar ul li a.active {opacity:1}
 		background-size: cover;
 		padding: 30px;
 	}
-	
+
 	.parallax-map-blur {
 			/* The image used */
 		background-image: url('./images/map-blur.jpg');
@@ -361,10 +361,10 @@ navbar ul li a.active {opacity:1}
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding: 30px;
-	
-		
+
+
 	}
-		
+
 
 
 
@@ -375,7 +375,7 @@ navbar ul li a.active {opacity:1}
 
 #Philosophie {
 	/*margin: 20px;*/
-	padding: 10px; 
+	padding: 10px;
 	/*background-color: rgba(0,0,0,0.5);*/
 }
 

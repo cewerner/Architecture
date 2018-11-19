@@ -231,6 +231,8 @@ navbar ul li:active a{opacity:1}
 /* Dieser Teil macht das Bild bei Hover dunkler*/
 .hovertitle:hover > img {
   opacity: 0.5;
+  filter: blur(3px);
+  transition: .2s ease-in-out;
 }
 
 /*Dieser Teil macht, dass die Schrift bei Hover sichtbar ist*/
@@ -247,7 +249,7 @@ navbar ul li:active a{opacity:1}
 }
 
 .hovertitle.portfolio, .hovertitle.team {
-  background-color: #000;
+  background-color: #313f4b;
   color: #fff;
   display: block;
   font-family: 'Open Sans', sans-serif;

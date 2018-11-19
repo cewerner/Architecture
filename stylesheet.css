@@ -203,6 +203,11 @@ navbar ul li:active a{opacity:1}
 
 }
 
+#Slider2 {
+  display: none;
+  padding: 20px 0px;
+}
+
 .logos {
   display:flex;
   justify-content: space-between;
@@ -506,7 +511,10 @@ input#send {
       /*CSS Code für Header und Menü - Ende*/
 
       /*CSS Code für Referenzen und Partner - Start*/
-
+      #Slider2 {display: block;}
+      .referenzen {display: none;}
+      .slick-next:before,.slick-prev:before {display: none;}
+      .slick-next,.slick-prev {display: none;}
       /*CSS Code für Referenzen und Partner - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/

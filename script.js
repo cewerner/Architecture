@@ -135,7 +135,7 @@ $('#send').click(function(){
   var Ort = document.querySelector("#ort").value;
   var Email = document.querySelector("#email").value;
   var Telefon = document.querySelector("#mobil").value;
-  
+
   var AngabenKorrekt = confirm(`Bitte überprüfen Sie, ob Ihre Angaben korrekt sind:
     ${Anrede} ${Vorname} ${Nachname}
     wohnhaft in:
@@ -146,6 +146,7 @@ $('#send').click(function(){
   if (AngabenKorrekt == true){
     $('.eingabefeld').val('');
     alert('Ihr Formular wurde abgeschickt!');
+    window.open("https://pavma.files.wordpress.com/2014/09/istock_000005420886medium.jpg");
   }
   else {alert('Bitte ändern Sie ihre Angaben!');
   };

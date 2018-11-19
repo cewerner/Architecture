@@ -129,7 +129,7 @@ navbar ul li a {
 }
 
 navbar ul li:hover a{opacity:1}
-navbar ul li:active a{opacity:1}
+navbar ul li a.active {opacity:1}
 
 #menubutton {
   display:none;
@@ -399,7 +399,7 @@ navbar ul li:active a{opacity:1}
 }
 
 .socialmedia img {
-  width:58px;
+  width:56px;
   margin-right: 10px;
 }
 iframe {
@@ -566,6 +566,7 @@ input#send {
         .hovertitle.portfolio, .hovertitle.team {margin:0.4%;}
         .hovertitle.portfolio {max-width: 49.2%;}
         .hovertitle.team {max-width: 32.53%;}
+        #Team p {display: none;}
 		  /*CSS Code für Bildergalerie und Team- Ende*/
 
       /*CSS Code für Karriere- Start*/
@@ -648,7 +649,10 @@ input#send {
       /*CSS Code für Header und Menü - Ende*/
 
       /*CSS Code für Referenzen und Partner - Start*/
-
+      #Slider2 {display: block;}
+      .referenzen {display: none;}
+      .slick-next:before,.slick-prev:before {display: none;}
+      .slick-next,.slick-prev {display: none;}
       /*CSS Code für Referenzen und Partner - Ende*/
 
       /*CSS Code für Bildergalerie und Team- Start*/
@@ -660,6 +664,7 @@ input#send {
         .hovertitle.portfolio {max-width: 98%;}
 
         .hovertitle.team {max-width: 98%;}
+        #Team p {display: none;}
         /*CSS Code für Bildergalerie und Team- Ende*/
 
         /*CSS Code für Kontakt- Start*/

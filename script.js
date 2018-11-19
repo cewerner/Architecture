@@ -33,8 +33,8 @@ $(document).scroll(function () {
 
 /*Navigation bekommt HG Farbe - Ende*/
 
-/*Scrollspy - Start*/
-
+/*Scrollspy by "https://materializecss.com/scrollspy.html" - Start*/
+$('.scrollspy').scrollSpy();
 /*Scrollspy - Ende*/
 
 /*Responsive Burgermenü - Start*/
@@ -43,7 +43,7 @@ $(function() {
   $('#menubutton').click(function() {
   if (menuVisible) {
     $('#Menü').css({'display':'none'});
-    if (positionSmall > 90) {
+    if (position > 90) {
         $("#Header").css({'background-color': '#4b5c69',
                           'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
     } else {

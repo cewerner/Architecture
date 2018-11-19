@@ -33,8 +33,29 @@ $(document).scroll(function () {
 
 /*Navigation bekommt HG Farbe - Ende*/
 
-/*Scrollspy by "https://materializecss.com/scrollspy.html" - Start*/
-$('.scrollspy').scrollSpy();
+/*Scrollspy by "https://codepen.io/zchee/pen/ogzvZZ" - Start*/
+(function() {
+  'use strict';
+
+  var section = document.querySelectorAll(".scrollspy");
+  var sections = {};
+  var i = 0;
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop-250;
+  });
+
+  window.onscroll = function() {
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        document.querySelector('.active').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+      }
+    }
+  };
+})();
 /*Scrollspy - Ende*/
 
 /*Responsive Burgermenü - Start*/
@@ -142,6 +163,9 @@ $('#send').click(function(){
   var Ort = document.querySelector("#ort").value;
   var Email = document.querySelector("#email").value;
   var Telefon = document.querySelector("#mobil").value;
+  var Anschreiben = document.querySelector("#anschreiben").value;
+  var Lebenslauf = document.querySelector("#lebenslauf").value;
+  var Unterlagen = document.querySelector("#unterlagen").value;
 
   var AngabenKorrekt = confirm(`Bitte überprüfen Sie, ob Ihre Angaben korrekt sind:
     ${Anrede} ${Vorname} ${Nachname}
@@ -149,7 +173,12 @@ $('#send').click(function(){
     ${Straße}
     ${Plz} ${Ort}
     Email: ${Email}
-    Telefonnummer: ${Telefon}`);
+    Telefonnummer: ${Telefon}
+
+    Sie haben folgende Unterlagen hochgeladen:
+    ${Anschreiben}
+    ${Lebenslauf}
+    ${Unterlagen}`);
   if (AngabenKorrekt == true){
     $('.eingabefeld').val('');
     alert('Ihr Formular wurde abgeschickt!');

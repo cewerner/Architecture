@@ -302,6 +302,13 @@ navbar ul li:active a{opacity:1}
 /*CSS Code für Bildergalerie - Ende*/
 
 
+/*CSS Code für Partner - Start*/
+#Partner {
+ box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15);
+}
+/*CSS Code für Partner - Ende*/
+
+
 /*CSS Code für Philosophie - Start */
 	/*CSS Parallax - Start*/
 
@@ -313,6 +320,22 @@ navbar ul li:active a{opacity:1}
 	.parallax {
 		/* The image used */
 		background-image: url('./images/ParallaxBild.jpg');
+		
+		/* Full height */
+		height: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 30px;
+		width:100%;
+	}
+	
+	.parallax-blur{
+		/* The image used */
+		background-image: url('./images/ParallaxBild-blurred.jpg');
 
 		/* Full height */
 		height: 100%;
@@ -322,16 +345,38 @@ navbar ul li:active a{opacity:1}
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding: 10px;
+		padding: 30px;
 	}
+	
+	.parallax-map-blur {
+			/* The image used */
+		background-image: url('./images/map-blur.jpg');
+
+		/* Full height */
+		height: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 30px;
+	
+		
+	}
+		
+
+
+
+
 
 /*CSS Parallax - Ende*/
 
 
 #Philosophie {
-	margin: 20px;
-  padding: 10px;
-	background-color: rgba(0,0,0,0.5);
+	/*margin: 20px;*/
+	padding: 10px; 
+	/*background-color: rgba(0,0,0,0.5);*/
 }
 
 #Philosophie p, #Philosophie h2 {

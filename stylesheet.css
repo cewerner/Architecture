@@ -302,6 +302,69 @@ navbar ul li a.active {opacity:1}
 /*CSS Code für Bildergalerie - Ende*/
 
 /*CSS Code für Leistungen - Start*/
+		/*Code nur vorher-nachher Bild Start*/
+		/* ================
+			// Before and After
+			// ============= */
+			.before-and-after {
+			  position: relative;
+			  overflow: hidden;
+			  width: 100%;
+			  cursor: ew-resize;
+			}
+			.before-and-after img {
+			  display: block;
+			  max-width: 100%;
+			}
+
+			.subject-before {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  z-index: -2;
+			  width: 100%;
+			}
+
+			.subject-scraper {
+			  overflow: hidden;
+			  -webkit-transform: translate(50%, 0);
+					  transform: translate(50%, 0);
+			}
+			.subject-scraper:before {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  z-index: 20;
+			  height: 100%;
+			  width: .25em;
+			  content: '';
+			  background: #fff;
+			}
+
+			.subject-after {
+			  -webkit-transform: translate(-50%, 0);
+					  transform: translate(-50%, 0);
+			}
+
+
+			#bildgroesse { width: 500px;}
+
+
+			/* ================
+			// Structure
+			// ============= */
+			html,
+			body {
+			  height: 100%;
+			}
+
+			body {
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+					
+					
+		/*Code nur für vorher-nachher Bild - Ende*/
 #Leistungen>div {position: relative;}
 .leistungstext {
   position: absolute;
@@ -397,12 +460,6 @@ navbar ul li a.active {opacity:1}
         -moz-box-shadow: inset 0px 38px 37px -33px rgba(0,0,0,0.69);
 		box-shadow: inset 0px 38px 37px -33px rgba(0,0,0,0.69);
 	}
-
-
-
-
-
-
 /*CSS Parallax - Ende*/
 
 
@@ -470,34 +527,41 @@ details {
 summary:focus {outline:none;}
 
 .eingabefeld {
-        border:1px solid;
-        border-color: #4b5c69;
-        padding:10px;
-        width:100%;
-        margin: 0px;}
-.Bewerbungsformular {display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    align-items: stretch;}
+	border:1px solid;
+	border-color: #4b5c69;
+	padding:10px;
+	width:100%;
+	margin: 0px;
+}
+.Bewerbungsformular {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
 .formularteil {
-        display:flex;
-        flex-direction: column;
-        width: 31%;
-        min-width: 222px;}
-.Bewerbungsformular h3 {margin-left: 0px;
-        min-width: 202px;}
+	display:flex;
+	flex-direction: column;
+	width: 31%;
+	min-width: 222px;
+}
+.Bewerbungsformular h3 {
+	margin-left: 0px;
+    min-width: 202px;
+}
 input#send {
-        padding: 10px;
-        width: 100%;
-        background-color: #4b5c69;
-        color: #fff;
-        border:1px solid;
-        border-color: #4b5c69;
-        margin:69px auto 0px auto;}
+	padding: 10px;
+	width: 100%;
+	background-color: #4b5c69;
+	color: #fff;
+	border:1px solid;
+	border-color: #4b5c69;
+	margin:69px auto 0px auto;
+}
 
 .file-upload {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 
 .file-upload__label {
@@ -540,7 +604,7 @@ input#send {
 
 #Impressum {
 	background-color:#313f4b;
-  padding: 50px 0px;
+	padding: 50px 0px;
 	margin: 100px 0px 0px 0px;
 }
 
@@ -640,10 +704,10 @@ input#send {
         .kontakt {flex-direction: column;}
 
     		.kontakt>div {
-    		  width: 100%;
-          max-height: 200px;
-    		  min-height: 0px;
-          flex-direction: row;
+				width: 100%;
+				max-height: 200px;
+				min-height: 0px;
+				flex-direction: row;
     		}
         .socialmedia {
           display:flex;
@@ -652,8 +716,9 @@ input#send {
         }
         .socialmedia img {
           margin-right: 0px;}
+		  
         iframe {
-		      width: 100%;
+		  width: 100%;
           max-height: 300px;
           min-height: 0px;
 		    }
@@ -673,7 +738,7 @@ input#send {
         .impressum p {font-size: 11px;}
       /*CSS Code für Header und Menü - Start*/
         header {
-  		    flex-wrap: wrap;
+  		  flex-wrap: wrap;
           align-items: flex-start;
   	    }
 
@@ -694,8 +759,8 @@ input#send {
         navbar ul {flex-direction: column;}
 
         navbar ul li {
-  		    border-bottom: 1px solid;
-          border-color: rgba(255,255,255,0.5);
+			border-bottom: 1px solid;
+			border-color: rgba(255,255,255,0.5);
         }
 
         #menubutton {display:inline;}
@@ -738,7 +803,7 @@ input#send {
           margin-right: 0px;}
 
         iframe {
-		      width: 100%;
+		  width: 100%;
           max-height: 150px;
           min-height: 0px;
 		    }

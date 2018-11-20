@@ -302,28 +302,7 @@ navbar ul li a.active {opacity:1}
 /*CSS Code für Bildergalerie - Ende*/
 
 /*CSS Code für Leistungen - Start*/
-.canvascontainer {
-  border: none;
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-.canvas {
-  position: absolute;
-  top: 0;
-  width: 100%
-}
 
-.form {
-  padding: 20px;
-  width: 100%;
-}
-.form img {width: 100%;}
 /*CSS Code für Leistungen - Ende*/
 
 /*CSS Code für Partner - Start*/

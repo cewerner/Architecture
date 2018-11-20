@@ -261,7 +261,7 @@ navbar ul li a.active {opacity:1}
   overflow: hidden;
   position: relative;
   text-align: center;
-  max-width: /*523.5px*/32.73%;
+  max-width: 32.73%;
   max-height: 32.73%;
   margin:0.3%;
 }
@@ -302,7 +302,29 @@ navbar ul li a.active {opacity:1}
 /*CSS Code für Bildergalerie - Ende*/
 
 /*CSS Code für Leistungen - Start*/
-
+#Leistungen>div {position: relative;}
+.leistungstext {
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 32.73%;
+  margin:0% 0% 0% auto;
+  padding: 30px;
+  top:0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.leistungstext p, .leistungstext ul li {color: #fff;}
+.leistungstext ul {padding: 0px;}
+#Leistungen img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  display:block;
+}
 /*CSS Code für Leistungen - Ende*/
 
 /*CSS Code für Partner - Start*/

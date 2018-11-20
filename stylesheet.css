@@ -303,68 +303,14 @@ navbar ul li a.active {opacity:1}
 
 /*CSS Code für Leistungen - Start*/
 		/*Code nur vorher-nachher Bild Start*/
-		/* ================
-			// Before and After
-			// ============= */
-			.before-and-after {
-			  position: relative;
-			  overflow: hidden;
-			  width: 100%;
-			  cursor: ew-resize;
-			}
-			.before-and-after img {
-			  display: block;
-			  max-width: 100%;
-			}
+	
+	
 
-			.subject-before {
-			  position: absolute;
-			  top: 0;
-			  left: 0;
-			  z-index: -2;
-			  width: 100%;
-			}
-
-			.subject-scraper {
-			  overflow: hidden;
-			  -webkit-transform: translate(50%, 0);
-					  transform: translate(50%, 0);
-			}
-			.subject-scraper:before {
-			  position: absolute;
-			  top: 0;
-			  left: 0;
-			  z-index: 20;
-			  height: 100%;
-			  width: .25em;
-			  content: '';
-			  background: #fff;
-			}
-
-			.subject-after {
-			  -webkit-transform: translate(-50%, 0);
-					  transform: translate(-50%, 0);
-			}
-
-
-			#bildgroesse { width: 500px;}
-
-
-			/* ================
-			// Structure
-			// ============= */
-			html,
-			body {
-			  height: 100%;
-			}
-
-			body {
-			  display: flex;
-			  align-items: center;
-			  justify-content: center;
-					
+	
 					
 		/*Code nur für vorher-nachher Bild - Ende*/
+		
+		
 #Leistungen>div {position: relative;}
 .leistungstext {
   position: absolute;

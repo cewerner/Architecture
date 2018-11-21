@@ -22,7 +22,7 @@ $('.autoplay2').slick({
 $(document).scroll(function () {
     var position = 0;
     position = $(this).scrollTop();
-    if (position > 140) {
+    if (position > 90) {
         $("#Header").css({'background-color': '#4b5c69',
                           'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
     } else {
@@ -64,21 +64,29 @@ $(function() {
   $('#menubutton').click(function() {
   if (menuVisible) {
     $('#Menü').css({'display':'none'});
-    var position = 0;
-    if (position > 90) {
-        $("#Header").css({'background-color': '#4b5c69',
-                          'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
-    } else {
-        $("#Header").css({'background-color': ''});
-        $("#Header").css({'box-shadow': ''});
-    }
+
+    $(window).resize(function(){
+    $('body,html').css('overflow','hidden');
+    var screenWidth = $(window).width();
+    $('body, html').css('overflow','visible');
+      var position = 0;
+      if (position > 90) {
+          $("#Header").css({'background-color': '#4b5c69',
+                            'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
+      } else {
+          $("#Header").css({'background-color': ''});
+          $("#Header").css({'box-shadow': ''});
+      }
+    });
+
     menuVisible = false;
     return;
-  }
+  } else {
   $('#Menü').css({'display':'block'})
   $("#Header").css({'background-color':'#4b5c69',
                   'box-shadow': '0 3px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.15)'});
   menuVisible = true;
+  }
   });
 });
 
@@ -102,17 +110,57 @@ $('body, html').css('overflow','visible');
           menuVisible = false;
   }
 });
+$(window).resize(function(){
+$('body,html').css('overflow','hidden');
 var screenWidth = $(window).width();
-if (screenWidth < 1080){
-$('navbar ul li a').click(function(){
-  $('#Menü').css({'display':'none'});
-})
-};
+$('body, html').css('overflow','visible');
+    if (screenWidth < 1080){
+    $('navbar ul li a').click(function(){
+      $('#Menü').css({'display':'none'});
+      menuVisible = false;
+      /*Smooth scrolling -Start*/
+
+      $('a').click(function(){
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      && location.hostname == this.hostname) {
+          var $target = $(this.hash);
+          $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+          if ($target.length) {
+              var targetOffset = $target.offset().top;
+              var HeaderHeight = $("Header").outerHeight();
+              $('html,body,main').animate({scrollTop: targetOffset-HeaderHeight-20}, 700);
+              return false;
+          }
+      }
+      });
+      /*Smooth scrolling -Ende*/
+    })
+    }
+    else {$('navbar ul li a').click(function(){
+      $('#Menü').css({'display':'block'});
+      /*Smooth scrolling -Start*/
+
+      $('a').click(function(){
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      && location.hostname == this.hostname) {
+          var $target = $(this.hash);
+          $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+          if ($target.length) {
+              var targetOffset = $target.offset().top;
+              var HeaderHeight = $("Header").outerHeight();
+              $('html,body,main').animate({scrollTop: targetOffset-HeaderHeight-20}, 700);
+              return false;
+          }
+      }
+      });
+      /*Smooth scrolling -Ende*/
+    })};
+  });
 /*Responsive Burgermenü - Ende*/
 
 /*Smooth scrolling -Start*/
 
-$('a').click(function(){
+/*$('a').click(function(){
 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 && location.hostname == this.hostname) {
     var $target = $(this.hash);
@@ -124,7 +172,7 @@ if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         return false;
     }
 }
-});
+});*/
 /*Smooth scrolling -Ende*/
 
 /*Hovereffekt Galerie - Start*/

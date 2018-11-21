@@ -221,7 +221,7 @@ $('#send').click(function(){
   if (AngabenKorrekt == true){
     $('.eingabefeld').val('');
     alert('Ihr Formular wurde abgeschickt!');
-    window.open("https://pavma.files.wordpress.com/2014/09/istock_000005420886medium.jpg");
+    window.open("https://pavma.files.wordpress.com/2014/09/istock_000005420886medium.jpg",  "width=200,height=200");
   }
   else {alert('Bitte ändern Sie ihre Angaben!');
   };

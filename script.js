@@ -59,9 +59,10 @@ $(document).scroll(function () {
 /*Scrollspy - Ende*/
 
 /*Responsive Burgermenü - Start*/
+var menuVisible = false;
 $(function() {
-  var menuVisible = false;
   $('#menubutton').click(function() {
+    console.log("menuVisible: "+menuVisible);
   if (menuVisible) {
     $('#Menü').css({'display':'none'});
 
@@ -114,9 +115,11 @@ $('navbar ul li a').click(function(){
   var screenWidth = $(window).width();
   if (screenWidth < 1080){
     $('#Menü').css({'display':'none'});
+    menuVisible = false;
   }
   else {
     $('#Menü').css({'display':'block'});
+    menuVisible = true;
   }
 });
 /*Responsive Burgermenü - Ende*/

@@ -306,7 +306,7 @@ navbar ul li a.active {opacity:1}
 .leistungstext {
   position: absolute;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(75, 92, 105,0.7);
   max-width: 32.73%;
   margin:0% 0% 0% auto;
   padding: 30px;
@@ -319,12 +319,56 @@ navbar ul li a.active {opacity:1}
 }
 .leistungstext p, .leistungstext ul li {color: #fff;}
 .leistungstext ul {padding: 0px;}
-#Leistungen img {
+#bildgroesse {
   position: relative;
   width: 100%;
   z-index: 2;
   display:block;
 }
+
+/* ================
+Before and After
+============= */
+.before-and-after {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  cursor: ew-resize;
+}
+.before-and-after img {
+  display: block;
+  max-width: 100%;
+}
+
+.subject-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+}
+
+.subject-scraper {
+  overflow: hidden;
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+}
+.subject-scraper:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  height: 100%;
+  width: 0px;
+  content: '';
+  background: #fff;
+}
+
+.subject-after {
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 /*CSS Code für Leistungen - Ende*/
 
 /*CSS Code für Partner - Start*/
@@ -619,6 +663,16 @@ input#send {
         #Team p {display: none;}
 		  /*CSS Code für Bildergalerie und Team- Ende*/
 
+      /*CSS Code für Leistungen - Start*/
+      .leistungstext {
+        position: relative;
+        max-width: 100%;
+        background-color: #fff;
+        padding: 20px 0px 0px 0px;
+      }
+      .leistungstext p, .leistungstext ul li {color: rgb(75, 92, 105);}
+      /*CSS Code für Leistungen - Ende*/
+
       /*CSS Code für Karriere- Start*/
         .Bewerbungsformular {flex-direction: column;}
         .formularteil {
@@ -719,6 +773,16 @@ input#send {
         .hovertitle.team {max-width: 98%;}
         #Team p {display: none;}
         /*CSS Code für Bildergalerie und Team- Ende*/
+
+        /*CSS Code für Leistungen - Start*/
+        .leistungstext {
+          position: relative;
+          max-width: 100%;
+          background-color: #fff;
+          padding: 20px 0px 0px 0px;
+        }
+        .leistungstext p, .leistungstext ul li {color: rgb(75, 92, 105);}
+        /*CSS Code für Leistungen - Ende*/
 
         /*CSS Code für Kontakt- Start*/
         .kontakt {flex-direction: column;}

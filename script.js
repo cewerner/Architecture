@@ -62,7 +62,6 @@ $(document).scroll(function () {
 var menuVisible = false;
 $(function() {
   $('#menubutton').click(function() {
-    console.log("menuVisible: "+menuVisible);
   if (menuVisible) {
     $('#Menü').css({'display':'none'});
 
@@ -79,7 +78,6 @@ $(function() {
           $("#Header").css({'box-shadow': ''});
       }
     });
-
     menuVisible = false;
     return;
   } else {
@@ -111,7 +109,9 @@ $('body, html').css('overflow','visible');
           menuVisible = false;
   }
 });
-$('navbar ul li a').click(function(){
+
+$('nav ul li a').click(function(){
+  console.log('test');
   var screenWidth = $(window).width();
   if (screenWidth < 1080){
     $('#Menü').css({'display':'none'});
@@ -183,10 +183,8 @@ subject.addEventListener('mousemove', dragScraper, false);
 subject.addEventListener('touchmove', dragScraper, false);
 
 function recalculateDistance() {
-
   distance = (window.innerWidth - subject.clientWidth) / 2;
-
-}
+};
 
 function dragScraper(event) {
 
